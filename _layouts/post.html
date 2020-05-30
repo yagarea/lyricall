@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="{{site.language}}">
+{% include head.html %}
+<body>
+	<div id="main">
+		{% include logo.html %}
+		{% include nav.html %}
+		<div id="content-left">
+			<div id="post">
+				<h1>{{ page.title }}</h1>
+				<h3>{{ page.author }}</h3>
+				<i>posted on {{ page.date | date: "%-d %b %Y" }}</i>
+				{{ content }}
+		   		<!--
+		   		<div id="categories">
+						<p><b>Author:</b>&nbsp;
+							{% for category in page.author %}
+								<a href="{{site.url}}{{site.baseurl}}/categories/{{category}}/">#{{category}}</a>&nbsp;
+							{% endfor %}
+						</p>
+				</div>
+				-->
+				{% if site.disqus_username and page.comments or site.comments %}
+					<div id="disqus_thread"></div><!-- /#disqus_thread -->
+					{% include disqus-comments.html %}
+				{% endif %}
+			</div>
+		</div>
+		{% include footer.html %}
+	</div>
+</body>
+</html>
