@@ -1,0 +1,26 @@
+title: Lyricall
+owner: "Jan Černý"
+email:
+description: "A minimalistic platform for poetry"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+language: en
+twitter_username:
+github_username:
+disqus_username: 
+# Build settings
+markdown: kramdown
+theme: minima
+
+permalink: /:year/:month/:day/:title/
+
+plugins:
+  - jekyll-feed
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor/bundle
+excerpt_separator: <!--more-->
+
+authors:
+  - "Jan Černý"
