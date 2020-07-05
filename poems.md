@@ -4,13 +4,11 @@ title: Poems
 permalink: /poems/
 ---
 
-{% assign sorted_categories = site.categories | sort %}
-{% for category in sorted_categories %}
-<div id="{{ category | first | downcase }}">
-  <h2>{{ category | first }}</h2>
-</div>
-  {% assign sorted_posts = category.last | sort: "date" | reverse %}
-  {% for post in sorted_posts %}
-- [{{ post.title }}]({{ post.url }}) ({{ post.date | date: "%-d. %-m. %Y" }})
-  {% endfor %}
+<div style="margin-left: 10em">
+{% for post in site.posts %}
+    <li>
+      	<time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>
+      	<a href="{{ post.url | relative_url }}"><b>{{ post.author }}</b>: {{ post.title }}</a>
+    </li>
 {% endfor %}
+</div>
