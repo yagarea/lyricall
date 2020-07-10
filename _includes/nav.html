@@ -1,5 +1,8 @@
 <div id="nav">
-	<a href="{{site.url}}{{site.baseurl}}/">Home</a> ·
-	<a href="{{site.url}}{{site.baseurl}}/about/">About</a> ·
-	<a href="{{site.url}}{{site.baseurl}}/poems/">Listing</a>
+	<a href="{{site.url}}{{site.baseurl}}/">
+		{% if page.tab == "home" %}<b>Home</b>{% else %}Home{% endif %}</a> ·
+	<a href="{{site.url}}{{site.baseurl}}/about/">
+		{% if page.tab == "about" %}<b>About</b>{% else %}About{% endif %}</a> ·
+	<a href="{{site.url}}{{site.baseurl}}/poems/">
+		{% if page.tab == "listing" %}<b>Listing</b>{% else %}Listing{% endif %}</a>
 </div>
