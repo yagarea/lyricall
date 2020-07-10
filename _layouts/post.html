@@ -20,10 +20,14 @@
 						</p>
 				</div>
 				-->
+				{% if page.note != null and page.note != "" %}
+					{% include note.html %}
+				{% endif %}
 				{% if site.disqus_username and page.comments or site.comments %}
 					<div id="disqus_thread"></div><!-- /#disqus_thread -->
 					{% include disqus-comments.html %}
 				{% endif %}
+
 			</div>
 		</div>
 		{% include footer.html %}
