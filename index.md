@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Recently published"
+tab: home
 ---
 
 <div>

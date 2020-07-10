@@ -2,6 +2,7 @@
 layout: default
 title: Poems
 permalink: /poems/
+tab: listing
 ---
 
 <div style="margin-left: 10em">

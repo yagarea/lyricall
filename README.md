@@ -2,6 +2,7 @@
 layout: default
 title: About
 permalink: /about/
+tab: about
 ---
 
 ### Lyricall
