@@ -3,7 +3,7 @@ body	{
 	padding:0;
 	font-family: 'Cutive Mono', serif;
 	font-size:100%;
-	line-height:150%;
+	line-height:130%;
 }
 
 a:link, a:visited	{
@@ -55,6 +55,11 @@ a:hover	{
 	margin-bottom:10px;
 	padding-bottom:10px;
 	border-top: 1px solid #000;
+}
+
+#note {
+	line-height: 100%;
+	margin: 0.5;
 }
 
 #logo	{
