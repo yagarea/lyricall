@@ -10,9 +10,11 @@
 				<h1>{{ page.title }}</h1>
 				<h3>{{ page.author }}</h3>
 				<i>posted on {{ page.date | date: "%-d %b %Y" }}</i>
-				{{ content }}
-		   		<!--
-		   		<div id="categories">
+				<blockquote>
+					{{ content }}
+				</blockquote>
+				<!--
+				<div id="categories">
 						<p><b>Author:</b>&nbsp;
 							{% for category in page.author %}
 								<a href="{{site.url}}{{site.baseurl}}/categories/{{category}}/">#{{category}}</a>&nbsp;
@@ -27,7 +29,6 @@
 					<div id="disqus_thread"></div><!-- /#disqus_thread -->
 					{% include disqus-comments.html %}
 				{% endif %}
-
 			</div>
 		</div>
 		{% include footer.html %}
