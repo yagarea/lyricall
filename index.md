@@ -16,10 +16,14 @@ tab: home
 		<i>posted on {{ post.date | date: "%-d %b %Y" }}</i>
 		<p>
 			{% if post.excerpt %}
-				{{ post.excerpt }}
+				<blockquote>
+					{{ post.excerpt }}
+				</blockquote>
 				<a href="{{site.url}}{{site.baseurl}}{{post.url}}"><i>Read more...</i></a>
 			{% else %}
-				{{ post.content }}
+				<blockquote>
+					{{ post.content }}
+				</blockquote>
 			{% endif %}
 		</p>
 	</div>
