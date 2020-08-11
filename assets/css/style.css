@@ -1,12 +1,15 @@
+---
+---
+
 @font-face {
-	font-family: "Cutive Mono";
-	src:url("/assets/fonts/CutiveMono-Regular.ttf");
+	font-family: CutiveMono;
+	src:url("{{site.url}}{{site.baseurl}}/assets/fonts/CutiveMono-Regular.ttf") format("truetype");
 }
 
 body	{
 	margin-top: 0px;
 	padding:0;
-	font-family: 'Cutive Mono', serif;
+	font-family: CutiveMono, courier;
 	font-size:100%;
 	line-height:130%;
 }
