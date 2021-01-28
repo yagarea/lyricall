@@ -1,13 +1,27 @@
+# Jekyll files
 _site
-.DS_Store
+.sass-cache
+.jekyll-metadata
+.jekyll-cache
+
+
+# Private project files
+_posts/
+_drafts/
+
+# Other
+\.DS_Store
 *.sublime-project
 *.sublime-workspace
 codekit-config.json
 node_modules
-.sass-cache
-.jekyll-metadata
 .bundle
 vendor/
 images/.comments
-_posts/
-_drafts/
+*.swp
+*.un~
+*.swo
+
+# Python export files
+__pycache__/
+
