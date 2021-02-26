@@ -24,3 +24,6 @@ excerpt_separator: <!--more-->
 
 authors:
   - "Jan Černý"
+  - "Placeholder"
+
+exclude: ["_site","scripts"]
