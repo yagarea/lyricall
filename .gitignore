@@ -8,6 +8,8 @@ _site
 # Private project files
 _posts/
 _drafts/
+scripts/
+makefile
 
 # Other
 \.DS_Store
