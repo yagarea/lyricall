@@ -11,7 +11,7 @@ body	{
 	padding:0;
 	font-family: CutiveMono, courier;
 	font-size:100%;
-	line-height:130%;
+	line-height:170%;
 }
 
 a:link, a:visited	{
@@ -36,7 +36,7 @@ a:hover	{
 	padding-top:0px;
 	margin-bottom:5px;
 	padding-bottom:5px;
-	border-bottom: 1px solid #000;
+	border-bottom: 3px solid #000;
 }
 
 #content-left {
@@ -62,7 +62,7 @@ a:hover	{
 	font-size:0.8em;
 	margin-bottom:10px;
 	padding-bottom:10px;
-	border-top: 1px solid #000;
+	border-top: 3px solid #000;
 }
 
 #note {
@@ -79,14 +79,23 @@ a:hover	{
 	max-width: 50%;
 }
 
+hr {
+	height: 0.3px;
+	color: #F5F5F5;
+	background-color: #F5F5F5;
+}
+
 #content-left a:link, #content-left a:visited	{
 	text-decoration: underline;
 	color:#000;
-	line-height: 50%;
 }
 
 #content-left a:hover	{
 	text-decoration: none;
+}
+
+#post-short {
+	line-height:130%;
 }
 
 #post-short a:link, #post-short a:visited	{
@@ -100,12 +109,16 @@ a:hover	{
 
 #post-short h3, #post h2	{
 	margin-bottom: 0px;
-	line-height: 50%;
 }
 
-#post-short i	{
+#post-short i {
 	font-size:0.8em;
 	color: grey;
+}
+
+
+#post {
+	line-height:150%;
 }
 
 #post i	{
@@ -147,6 +160,8 @@ a:hover	{
 
 	h2 {
 		font-size: 3em;
+		line-height: 110%;
+		margin-bottom: 10px;
 	}
 
 	h3 {
@@ -178,10 +193,19 @@ a:hover	{
 
 	h2 {
 		font-size: 2em;
+		margin: 0 0 10px;
 	}
 
 	h3 {
-		font-size: 1.5em;
+		font-size: 1.2em;
+	}
+
+	p {
+		font-size: 90%;
+	}
+
+	blockquote {
+		margin: 0 10px 0;
 	}
 
 }
