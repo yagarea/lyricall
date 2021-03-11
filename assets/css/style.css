@@ -1,45 +1,9 @@
 ---
 ---
 
-@charset "utf-8";
-
-:root {
-	--light-text: black;
-	--light-link: black;
-	--light-background: #fff;
-
-	--light-header-background-color: lighten($light-text-color, 93%);
-	--light-code-background-color: $light-header-background-color;
-
-	--dark-text: white;
-	--dark-link: #adadad;
-	--dark-background: #282828;
-
-	-webkit-filter:invert(100%);
-}
-
-
 @font-face {
 	font-family: CutiveMono;
 	src:url("{{site.url}}{{site.baseurl}}/assets/fonts/CutiveMono-Regular.ttf") format("truetype");
-}
-
-
-@media (prefers-color-scheme: dark) {
-	body {
-		svg, img { filter: invert(100%); }
-
-		color: white;
-		background-color: var(--dark-background);
-
-		a, a:visited, a:link { 
-			color: var(--dark-link);
-		}
-	}
-	
-	#post-short a:link, #post-short a:visited {
-		color: var(--dark-link);
-	}
 }
 
 body	{
@@ -52,7 +16,7 @@ body	{
 
 a:link, a:visited	{
 	text-decoration: none;
-	color: var(--light-link);
+	color:#000
 }
 
 a:hover	{
@@ -123,7 +87,7 @@ hr {
 
 #content-left a:link, #content-left a:visited	{
 	text-decoration: underline;
-	color: var(--light-link);
+	color:#000;
 }
 
 #content-left a:hover	{
@@ -136,7 +100,7 @@ hr {
 
 #post-short a:link, #post-short a:visited	{
 	text-decoration: none;
-	/*color: var(--light-link);*/
+	color:#000
 }
 
 #post-short a:hover	{
@@ -151,6 +115,7 @@ hr {
 	font-size:0.8em;
 	color: grey;
 }
+
 
 #post {
 	line-height:150%;
