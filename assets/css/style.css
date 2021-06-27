@@ -1,46 +1,15 @@
 ---
 ---
 
-@charset "utf-8";
-
-:root {
-	--light-text: black;
-	--light-link: black;
-	--light-background: #fff;
-
-	--light-header-background-color: lighten($light-text-color, 93%);
-	--light-code-background-color: $light-header-background-color;
-
-	--dark-text: white;
-	--dark-link: #adadad;
-	--dark-background: #282828;
-}
-
-
 @font-face {
 	font-family: CutiveMono;
 	src:url("{{site.url}}{{site.baseurl}}/assets/fonts/CutiveMono-Regular.ttf") format("truetype");
 }
 
 
-@media (prefers-color-scheme: dark) {
-	body {
-		svg, img { 
-			filter: invert(100%); 
-			-webkit-filter: invert(100%);
-		}
-
-		color: white;
-		background-color: var(--dark-background);
-
-		a, a:visited, a:link { 
-			color: var(--dark-link);
-		}
-	}
-	
-	#post-short a:link, #post-short a:visited {
-		color: var(--dark-link);
-	}
+@font-face {
+	font-family: BetterGrade;
+	src:url("{{site.url}}{{site.baseurl}}/assets/fonts/BetterGrade.ttf") format("truetype");
 }
 
 body	{
@@ -109,7 +78,18 @@ a:hover	{
 
 #logo	{
 	text-align:center;
+	line-height: 80%;
+	font-family: BetterGrade, courier;
+	font-size: 800%;
 	margin: 20px auto 20px auto;
+	text-decoration: none;
+
+
+}
+
+#logo a {
+	margin-top: 30px;
+	margin-bottom: 30;
 }
 
 #logo img {
@@ -138,7 +118,6 @@ hr {
 #post-short a:link, #post-short a:visited	{
 	text-decoration: none;
 	color:#000
-	color: var(--light-link);
 }
 
 #post-short a:hover	{
@@ -247,3 +226,4 @@ hr {
 	}
 
 }
+
