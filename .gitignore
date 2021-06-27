@@ -6,8 +6,8 @@ _site
 
 
 # Private project files
-_posts/
-!_posts/1845-2-25-raven.md		#Testing file
+_posts/*
+!_posts/1845-02-25-raven.md		#Testing file
 _drafts/
 scripts/
 makefile
