@@ -20,6 +20,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - vendor/bundle
+  - README.md
 excerpt_separator: <!--more-->
 
 authors:
