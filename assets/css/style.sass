@@ -1,0 +1,192 @@
+---
+---
+
+@font-face
+  font-family: CutiveMono
+  src: url("{{site.url}}{{site.baseurl}}/assets/fonts/CutiveMono-Regular.ttf") format("truetype")
+
+@font-face
+  font-family: BetterGrade
+  src: url("{{site.url}}{{site.baseurl}}/assets/fonts/BetterGrade.ttf") format("truetype")
+
+body
+  margin-top: 0px
+  padding: 0
+  font-family: CutiveMono, courier
+  font-size: 100%
+  line-height: 170%
+
+a
+  &:link, &:visited
+    text-decoration: none
+    color: #000
+
+  &:hover
+    text-decoration: underline
+
+#main
+  width: 65%
+  margin: 0 auto
+
+#nav
+  text-align: center
+  margin: auto
+  margin-top: 0px
+  padding-top: 0px
+  margin-bottom: 5px
+  padding-bottom: 5px
+  border-bottom: 3px solid #000
+
+#content-left
+  text-align: left
+  margin: auto
+  padding-top: 5px
+  margin-bottom: 20px
+  padding-bottom: 20px
+
+#content
+  text-align: center
+  margin: auto
+  margin-top: 20px
+  padding-top: 20px
+  margin-bottom: 20px
+  padding-bottom: 20px
+
+#footer
+  text-align: center
+  margin: auto
+  font-size: 0.8em
+  margin-bottom: 10px
+  padding-bottom: 10px
+  border-top: 3px solid #000
+
+#note
+  line-height: 100%
+  margin: 0.5
+
+#logo
+  text-align: center
+  line-height: 80%
+  font-family: BetterGrade, courier
+  font-size: 800%
+  margin: 20px auto 20px auto
+  text-decoration: none
+
+  a
+    text-decoration: none
+    margin-top: 30px
+    margin-bottom: 30
+
+  img
+    max-width: 50%
+
+hr
+  height: 0.3px
+  color: #F5F5F5
+  background-color: #F5F5F5
+
+#content-left a
+  &:link, &:visited
+    text-decoration: underline
+    color: #000
+
+  &:hover
+    text-decoration: none
+
+#post-short
+  line-height: 130%
+
+  a
+    &:link, &:visited
+      text-decoration: none
+      color: #000
+
+    &:hover
+      text-decoration: underline
+
+  h3
+    margin-bottom: 0px
+
+#post h2
+  margin-bottom: 0px
+
+#post-short i
+  font-size: 0.8em
+  color: grey
+
+#post
+  line-height: 150%
+
+  i
+    font-size: 0.9em
+    color: grey
+
+#categories a
+  background-color: grey
+  text-decoration: none
+  padding: 0.1em 0.5em 0.1em 0.5em
+  border-radius: 25px
+
+  &:link, &:visited
+    background-color: grey
+    text-decoration: none
+    padding: 0.1em 0.5em 0.1em 0.5em
+    border-radius: 25px
+
+  &:hover
+    text-decoration: underline
+
+@media screen and (max-width: 850px)
+  #main
+    width: auto
+    margin: 0 auto
+    padding: 10px
+
+  #logo, #nav, #content-left, #footer
+    display: block
+    width: 100%
+
+  #logo img
+    max-width: 80%
+
+  #nav
+    font-size: 2em
+    padding-bottom: 0.5em
+
+  h2
+    font-size: 3em
+    line-height: 110%
+    margin-bottom: 10px
+
+  h3
+    font-size: 2em
+
+@media screen and (max-width: 400px)
+  #main
+    width: auto
+    margin: 0 auto
+    padding: 10px
+
+  #logo, #nav, #content-left, #footer
+    display: block
+    width: 100%
+
+  #logo img
+    max-width: 80%
+
+  #nav
+    font-size: 1.1em
+    padding-bottom: 0.5em
+
+  h2
+    font-size: 2em
+    margin: 0 0 10px
+
+  h3
+    font-size: 1.2em
+
+  p
+    font-size: 90%
+
+  blockquote
+    margin: 0 10px 0
