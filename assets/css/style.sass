@@ -1,6 +1,33 @@
 ---
 ---
 
+// https://colorhunt.co/palette/e0ece4f7f2e7d8d3cd797a7e
+$lightmode-body-color:              #FFFFFF
+$lightmode-text-color:              #000000
+$lightmode-logo-color:              #000000
+$lightmode-link-color:              #000000
+$lightmode-ling-visited:            #101010
+$lightmode-quote-color:             #000000
+$lightmode-code-background-color:   #787878
+$lightmode-text-highlight-color:    #D3D3D3
+$lightmode-separator-color:         #F5F5F5
+
+// https://colorhunt.co/palette/525252414141313131ec625f
+$darkmode-body-color:               #313131
+$darkmode-text-color:               #FFFFFF
+$darkmode-logo-color:               #FFFFFF
+$darkmode-link-color:               #FFFFFF
+$darkmode-quote-color:              #FFFFFF
+$darkmode-code-background-color:    #787878
+$darkmode-text-highlight-color:     #D3D3D3
+$darkmode-separator-color:          #525252
+
+$color-mode-is-light: global true
+@media (prefers-color-scheme: dark)
+  $color-mode-is-light: false
+  
+
+
 @font-face
   font-family: CutiveMono
   src: url("{{site.url}}{{site.baseurl}}/assets/fonts/CutiveMono-Regular.ttf") format("truetype")
@@ -15,6 +42,10 @@ body
   font-family: CutiveMono, courier
   font-size: 100%
   line-height: 170%
+  @if $color-mode-is-light
+    background-color: $lightmode-body-color
+  @else
+    background-color: $darkmode-body-color
 
 a
   &:link, &:visited
