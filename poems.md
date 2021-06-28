@@ -5,8 +5,11 @@ permalink: /poems/
 tab: listing
 ---
 
+{%- capture authors_raw -%}{% for post in site.posts %}{{- post.author -}}{% if forloop.last == false %}^{% endif %}{% endfor %}{% endcapture %}
+{%- assign authors = authors_raw | split: "^" | uniq -%}
+
 <div>
-{% for author in site.authors %}
+{% for author in authors %}
 	<h2 id="{{ author | replace: " ", "-" }}">{{ author }}</h2>
 	<blockquote>
 		{% assign current_author = site.posts | where: "author", author %}
@@ -22,3 +25,4 @@ tab: listing
 	</blockquote>
 {% endfor %}
 </div>
+
