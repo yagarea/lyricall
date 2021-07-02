@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="{{site.language}}">
-  {% include head.html %}
-  <body>
-	<div id="main">
-		{% include logo.html %}
-		{% include nav.html %}
-		<div id="content-left">
-      <h2 style="text-align: center;">{{page.title}}</h2>
-      {{content}}
+	{% include head.html %}
+  	<body>
+		{% include color-scheme-toggle.html %}
+		<div id="color-container">
+			<div id="main">
+				{% include logo.html %}
+				{% include nav.html %}
+				<div id="content-left">
+      				<h2 style="text-align: center;">{{page.title}}</h2>
+      				{{content}}
+				</div>
+				{% include footer.html %}
+			</div>
 		</div>
-		{% include footer.html %}
-	</div>
-    </body>
+	</body>
 </html>
