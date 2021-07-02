@@ -11,10 +11,8 @@
   font-family: BetterGrade
   src: url("{{site.url}}{{site.baseurl}}/assets/fonts/BetterGrade.ttf") format("truetype")
 
-
-#color-container
+body
   margin-top: 0px
-  width: 100%
   padding: 0
   font-family: CutiveMono, courier
   font-size: 100%
@@ -25,10 +23,12 @@
 a
   &:link, &:visited
     text-decoration: none
-    color:  var(--link-visited)
+    color:  var(--link-visited-color)
 
   &:hover
     text-decoration: underline
+
+
 
 #main
   width: 65%
@@ -103,11 +103,15 @@ hr
 #post-short
   line-height: 130%
   color: var(--text-color)
+  background-color: var(--post-frame-color)
+  padding: 15px
+  border-radius: 10px
+  margin-bottom: 10px
 
   a
     &:link, &:visited
       text-decoration: none
-      color: var(--link-visited)
+      color: var(--link-visited-color)
 
     &:hover
       text-decoration: underline
