@@ -14,6 +14,8 @@
 	--code-background-color:#787878;
 	--text-highlight-color: #D3D3D3;
  	--separator-color: 		#525252;
+	--post-frame-color: 	#5D6578;
+
 }
 
 @mixin light-theme {
@@ -28,24 +30,17 @@
 	--code-background-color:#787878;
 	--text-highlight-color: #D3D3D3;
  	--separator-color: 		#525252;
+	--post-frame-color:		#CDCDCD;
 }
 
 @media (prefers-color-scheme: dark){
-	#color-container {
+	:root{
 		@include dark-theme;
 	}
-
- 	#theme-toggle:checked ~ #color-container {
-		@include light-theme;
-   	}
 }
 
 @media (prefers-color-scheme: light){
-	#color-container {
+	:root {
 		@include light-theme;
 	}
-
-	#theme-toggle:checked ~ #color-container {
-       @include dark-theme;
-   }
 }
