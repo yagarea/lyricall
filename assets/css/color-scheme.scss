@@ -1,0 +1,51 @@
+
+// light theme reference: https://colorhunt.co/palette/e0ece4f7f2e7d8d3cd797a7e
+// dark theme reference:  https://colorhunt.co/palette/525252414141313131ec625f
+
+@mixin dark-theme {
+	--body-color: 			#313131;
+	--text-color: 			#FFFFFF;
+	--title-color: 			#000000;
+	--subtitle-color: 		#808080;
+	--logo-color: 			#FFFFFF;
+ 	--link-color: 			#FFFFFF;
+ 	--link-visited-color: 	#FFFFFF;
+ 	--quote-color: 			#FFFFFF;
+	--code-background-color:#787878;
+	--text-highlight-color: #D3D3D3;
+ 	--separator-color: 		#525252;
+}
+
+@mixin light-theme {
+	--body-color: 			#313131;
+	--text-color: 			#FFFFFF;
+	--title-color: 			#000000;
+	--subtitle-color: 		#808080;
+	--logo-color: 			#FFFFFF;
+ 	--link-color: 			#FFFFFF;
+ 	--link-visited-color: 	#FFFFFF;
+ 	--quote-color: 			#FFFFFF;
+	--code-background-color:#787878;
+	--text-highlight-color: #D3D3D3;
+ 	--separator-color: 		#525252;
+}
+
+@media (prefers-color-scheme: dark){
+	#color-container {
+		@include dark-theme;
+	}
+
+ 	#theme-toggle:checked ~ #color-container {
+		@include light-theme;
+   	}
+}
+
+@media (prefers-color-scheme: light){
+	#color-container {
+		@include light-theme;
+	}
+
+	#theme-toggle:checked ~ #color-container {
+       @include dark-theme;
+   }
+}
