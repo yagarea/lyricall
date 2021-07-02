@@ -19,18 +19,22 @@
 }
 
 @mixin light-theme {
-	--body-color: 			#313131;
-	--text-color: 			#FFFFFF;
+	--body-color: 			#CDCDCD;
+	--text-color: 			#000000;
 	--title-color: 			#000000;
 	--subtitle-color: 		#808080;
-	--logo-color: 			#FFFFFF;
- 	--link-color: 			#FFFFFF;
- 	--link-visited-color: 	#FFFFFF;
- 	--quote-color: 			#FFFFFF;
+	--logo-color: 			#000000;
+ 	--link-color: 			#000000;
+ 	--link-visited-color: 	#000000;
+ 	--quote-color: 			#000000;
 	--code-background-color:#787878;
 	--text-highlight-color: #D3D3D3;
  	--separator-color: 		#525252;
-	--post-frame-color:		#CDCDCD;
+	--post-frame-color:		#D3D3D3;
+}
+
+:root {
+	@include light-theme;
 }
 
 @media (prefers-color-scheme: dark){
@@ -39,8 +43,3 @@
 	}
 }
 
-@media (prefers-color-scheme: light){
-	:root {
-		@include light-theme;
-	}
-}
