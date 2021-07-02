@@ -27,7 +27,6 @@ tab: home
 					</blockquote>
 				{% endif %}
 			</p>
-			<hr/>
 		</div>
 	{% endif %}
 {% endfor %}
