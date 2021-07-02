@@ -1,32 +1,7 @@
 ---
 ---
 
-// https://colorhunt.co/palette/e0ece4f7f2e7d8d3cd797a7e
-$lightmode-body-color:              #FFFFFF
-$lightmode-text-color:              #000000
-$lightmode-logo-color:              #000000
-$lightmode-link-color:              #000000
-$lightmode-ling-visited:            #101010
-$lightmode-quote-color:             #000000
-$lightmode-code-background-color:   #787878
-$lightmode-text-highlight-color:    #D3D3D3
-$lightmode-separator-color:         #F5F5F5
-
-// https://colorhunt.co/palette/525252414141313131ec625f
-$darkmode-body-color:               #313131
-$darkmode-text-color:               #FFFFFF
-$darkmode-logo-color:               #FFFFFF
-$darkmode-link-color:               #FFFFFF
-$darkmode-quote-color:              #FFFFFF
-$darkmode-code-background-color:    #787878
-$darkmode-text-highlight-color:     #D3D3D3
-$darkmode-separator-color:          #525252
-
-$color-mode-is-light: global true
-@media (prefers-color-scheme: dark)
-  $color-mode-is-light: false
-  
-
+@import "assets/css/color-scheme.scss"
 
 @font-face
   font-family: CutiveMono
@@ -36,21 +11,21 @@ $color-mode-is-light: global true
   font-family: BetterGrade
   src: url("{{site.url}}{{site.baseurl}}/assets/fonts/BetterGrade.ttf") format("truetype")
 
-body
+
+#color-container
   margin-top: 0px
+  width: 100%
   padding: 0
   font-family: CutiveMono, courier
   font-size: 100%
   line-height: 170%
-  @if $color-mode-is-light
-    background-color: $lightmode-body-color
-  @else
-    background-color: $darkmode-body-color
+  background-color: var(--body-color)
+  color: var(--text-color)
 
 a
   &:link, &:visited
     text-decoration: none
-    color: #000
+    color:  var(--link-visited)
 
   &:hover
     text-decoration: underline
@@ -66,7 +41,7 @@ a
   padding-top: 0px
   margin-bottom: 5px
   padding-bottom: 5px
-  border-bottom: 3px solid #000
+  border-bottom: 3px solid var(--separator-color)
 
 #content-left
   text-align: left
@@ -89,7 +64,7 @@ a
   font-size: 0.8em
   margin-bottom: 10px
   padding-bottom: 10px
-  border-top: 3px solid #000
+  border-top: 3px solid var(--separator-color)
 
 #note
   line-height: 100%
@@ -107,30 +82,32 @@ a
     text-decoration: none
     margin-top: 30px
     margin-bottom: 30
+    color: var(--logo-color)
 
   img
     max-width: 50%
 
 hr
   height: 0.3px
-  color: #F5F5F5
-  background-color: #F5F5F5
+  color: var(--separator-color)
+  background-color: var(--separator-color)
 
 #content-left a
   &:link, &:visited
     text-decoration: underline
-    color: #000
+    color: var(--link-visited)
 
   &:hover
     text-decoration: none
 
 #post-short
   line-height: 130%
+  color: var(--text-color)
 
   a
     &:link, &:visited
       text-decoration: none
-      color: #000
+      color: var(--link-visited)
 
     &:hover
       text-decoration: underline
@@ -143,7 +120,6 @@ hr
 
 #post-short i
   font-size: 0.8em
-  color: grey
 
 #post
   line-height: 150%
@@ -151,21 +127,6 @@ hr
   i
     font-size: 0.9em
     color: grey
-
-#categories a
-  background-color: grey
-  text-decoration: none
-  padding: 0.1em 0.5em 0.1em 0.5em
-  border-radius: 25px
-
-  &:link, &:visited
-    background-color: grey
-    text-decoration: none
-    padding: 0.1em 0.5em 0.1em 0.5em
-    border-radius: 25px
-
-  &:hover
-    text-decoration: underline
 
 @media screen and (max-width: 850px)
   #main
