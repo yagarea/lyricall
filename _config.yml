@@ -3,12 +3,10 @@ owner: "Jan Černý"
 email:
 description: "A minimalistic platform for poetry"
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://lyrical.cz" # the base hostname & protocol for your site, e.g. http://example.com
 language: en
-twitter_username:
-github_username:
-disqus_username: 
 # Build settings
+#
 markdown: kramdown
 theme: minima
 
@@ -24,4 +22,4 @@ exclude:
 excerpt_separator: <!--more-->
 
 
-exclude: ["_site","scripts"]
+exclude: ["_site","scripts", "_meta"]
