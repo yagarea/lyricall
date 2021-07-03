@@ -28,8 +28,6 @@ a
   &:hover
     text-decoration: underline
 
-
-
 #main
   width: 65%
   margin: 0 auto
@@ -66,6 +64,18 @@ a
   padding-bottom: 10px
   border-top: 3px solid var(--separator-color)
 
+.hfill
+  display: flex
+  justify-content: space-between
+  list-style-type: none
+  padding-bottom: 0px
+  padding-left: 0px
+  margin: 0px
+
+.poem-list
+  margin: auto
+  max-width: 700px
+
 #note
   line-height: 100%
   margin: 0.5
@@ -93,6 +103,8 @@ hr
   background-color: var(--separator-color)
 
 #content-left a
+  color: var(--link-color)
+
   &:link, &:visited
     text-decoration: underline
     color: var(--link-visited)
@@ -100,14 +112,18 @@ hr
   &:hover
     text-decoration: none
 
-#post-short
-  line-height: 130%
+#post-short, #post
   color: var(--text-color)
   background-color: var(--post-frame-color)
   padding: 15px
-  border-radius: 10px
+  border-radius: 5px
+  margin: auto
+  max-width: 800px
   margin-bottom: 10px
 
+#post-short
+  line-height: 130%
+  
   a
     &:link, &:visited
       text-decoration: none
@@ -186,3 +202,4 @@ hr
 
   blockquote
     margin: 0 10px 0
+
