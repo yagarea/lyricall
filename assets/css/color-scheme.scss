@@ -5,7 +5,7 @@
 @mixin dark-theme {
 	--body-color: 			#313131;
 	--text-color: 			#FFFFFF;
-	--title-color: 			#000000;
+	--title-color: 			#FFFFFF;
 	--subtitle-color: 		#808080;
 	--logo-color: 			#FFFFFF;
  	--link-color: 			#FFFFFF;
@@ -14,12 +14,12 @@
 	--code-background-color:#787878;
 	--text-highlight-color: #D3D3D3;
  	--separator-color: 		#525252;
-	--post-frame-color: 	#5D6578;
+	--post-frame-color: 	#242526;
 
 }
 
 @mixin light-theme {
-	--body-color: 			#CDCDCD;
+	--body-color: 			#EBEBEB;
 	--text-color: 			#000000;
 	--title-color: 			#000000;
 	--subtitle-color: 		#808080;
@@ -29,7 +29,7 @@
  	--quote-color: 			#000000;
 	--code-background-color:#787878;
 	--text-highlight-color: #D3D3D3;
- 	--separator-color: 		#525252;
+ 	--separator-color: 		#706A60;
 	--post-frame-color:		#D3D3D3;
 }
 
