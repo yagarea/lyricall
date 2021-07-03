@@ -8,6 +8,7 @@ tab: listing
 {%- capture authors_raw -%}{% for post in site.posts %}{{- post.author -}}{% if forloop.last == false %}^{% endif %}{% endfor %}{% endcapture %}
 {%- assign authors = authors_raw | split: "^" | uniq -%}
 
+<div id="post">
 <div class="poem-list">
 {% for author in authors %}
 	<h2 id="{{ author | replace: " ", "-" }}">{{ author }}</h2>
@@ -24,5 +25,6 @@ tab: listing
 		<hr/>
 	</blockquote>
 {% endfor %}
+</div>
 </div>
 
