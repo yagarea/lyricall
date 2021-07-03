@@ -6,7 +6,7 @@ tab: home
 
 <div>
 {% for post in site.posts %}
-	{% if post.hidden != true %}
+	{% if post.listed %}
 		<div id="post-short">
 			<a href="{{site.url}}{{site.baseurl}}{{post.url}}">
 				<h2>{{post.title}}</h2>

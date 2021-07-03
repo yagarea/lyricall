@@ -14,7 +14,7 @@ tab: listing
 	<blockquote>
 		{% assign current_author = site.posts | where: "author", author %}
 		{% for post in current_author %}
-			{% if post.hidden != true %}
+			{% if post.listed %}
     		<li>
       			<time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>
       			<a href="{{ post.url | relative_url }}"><b>{{ post.title }}</b></a>
