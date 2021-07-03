@@ -1,7 +1,3 @@
-<!-- Issuehunt Badges -->
-[<img alt="Issuehunt badges" src="https://img.shields.io/badge/IssueHunt-%2410%20Funded-%2300A156.svg" />](https://issuehunt.io/r/yagarea/lyricall/issues/12)
-<!-- /Issuehunt Badges -->
-
 
 ### Lyricall the platform
 Lyricall is minimalistic, multilingual and open source platform for free minded poetry 
