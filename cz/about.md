@@ -1,11 +1,11 @@
 ---
-layout: default
+layout: document
 title: About
 permalink: /cz/about/
 tab: about
 ---
 
-### Lyricall the movemnt
+### Lyricall jako hnutí
 
 #### 1. Reakce na standardizovaní sterility umění
 Tento bod je první, protože je hlavním důvodem
@@ -13,7 +13,7 @@ Tento bod je první, protože je hlavním důvodem
 Dnešní tvorba a umění celkově je odličtěné, sterilní, choulostivě korektní a jednorozměrné.
 Umění je repetetivní, neoriginální a nevariabilní. Zmizela potřeba experimentovat.
 
-Toto lze metafricky přiblížit porovnáním voskového a pravého ovoce.
+Toto lze metaforicky přiblížit porovnáním voskového a pravého ovoce.
 
 ### 2. Decentralizace
 Tvorba je centralizovaná a monopolní
@@ -21,30 +21,59 @@ Tvorba je centralizovaná a monopolní
 ### 3. Osvobození jazyka a projevu
 Jazyk slouží člověku nikoliv naopak
 - Uvědomění si hodnoty a svobodného slova
-- Neuznávání libovolných autorit na konvence a určování co je v poezii správně nebo špatně.
+- Neuznávání libovolných autorit na konvence a určování co je v poezii správně nebo 
+špatně.
 
 ### 4. Úcta ke všeobecnému vzdělání i vzdělání jako takovému
 - ? Cílová skupina jsou lidi v přírodních vědách
 
 ---
 
-### Lyricall the platform
-Lyricall is minimalistic, multilingual and open source platform for free minded poetry 
-publishing. It is maintained by [Jan Černý](https://blackblog.cz/). Feel free to open
-issues on github or make pull requests.
+### Lyricall jako platforma
+Lyricall je minimalistická, multilinguální a hlavně open source platforma pro publikace 
+svobodomyslné poezie. Je spravována [Janem Černým](https://blackblog.cz/). Pokud chcete
+můžete na githubu napsat zpětnou vazbu ve formě [github issues](https://github.com/yagarea/lyricall/issues)
+nebo vytvořit pull request.
 
-Byla vyrobena s těmito zásadami:
-- **Žádný javascript** - Tato stránka neobsahuje žádný javascript, můžete si ho klidně vypnout
-- **Respekt k soukromí uživatelů** - Tato stánka nesbírá žádná data o svých náštěvnících. Můžete si ji prohlížet v kompletní anonymitě. Sbíráme pouze velmi základní informace o navštěvovanosti, pomocí opensource služby [https://plausible.io/](https://plausible.io/).
-- **Široká kompatibilita včetně CLI** - Lyricall funguje na všech standardních prohlížečích, včetné terminálových. Pro prohlížení lyricallu doporučujeme CLI prohlížeč [w3m](http://w3m.sourceforge.net/).
-- **Podpora Markdownu a LaTeXu** - Lyricall má kompletní podporu $$\LaTeX$$u včetné maker. Autoři můžou markdown a latex libovolně prolínat a lyricall jim zaručí dobrou typografickou úpravu.
+#### Byla vyrobena s těmito zásadami:
+- **Žádný javascript** - Tato stránka neobsahuje žádný javascript, můžete si ho klidně
+vypnout.
+- **Žádné cookies** - Celá platforma lyricall nevyužívá cookies. Nemusíme Vás tak 
+otravovat banery na jejich povolení a zvyšujeme tím bezpečnost.
+- **Žádné externí zdroje** - Vše na této stránce se načíte pouze z jejich vlastních 
+serverů.
+- **Respekt k soukromí uživatelů** - Tato stránka nesbírá žádná data o svých 
+návštěvnících. Můžete si ji prohlížet v kompletní anonymitě. Sbíráme pouze velmi 
+základní informace o navštěvovanosti, pomocí opensource služby [plausible](https://plausible.io/).
+- **Široká kompatibilita včetně CLI** - Lyricall funguje na všech standardních 
+prohlížečích, včetné terminálových. Pro prohlížení lyricallu doporučujeme CLI prohlížeč 
+[w3m](http://w3m.sourceforge.net/).
+- **Podpora Markdownu a LaTeXu** - Lyricall má kompletní podporu $$\LaTeX$$u včetně 
+maker. Autoři můžou markdown a latex libovolně prolínat a lyricall jim zaručí dobrou 
+typografickou úpravu.
 - **100% statický** - Celá stránka je kompletně statická a nevyužívá žádný backend.
-- **Podpora RSS** - Lyricall má automaticky generovaný RSS feed. Můžete si ho přidat do svých čteček: [feed.xml](/feed.xml)
-- **Žádná integrace sociálních sítí** - Lyricall není přimo propojený s žádnou sociální sítí. Sorry, Zuckerbergu, ale budeš si uset najít jiný způsob jak špehovat naše uživatele.
-- **SEO friendly** - Celá stránka je navržen tak aby striktně dodržovala formát vhodný pro SEO.
-- **Minimalistický design** - Celkový desing stránky je navržený, tak aby nerušil vizuálním smogem od svého obsahu.
+- **Podpora RSS** - Lyricall má automaticky generovaný RSS feed. Můžete si ho přidat 
+do svých čteček: [feed.xml](/feed.xml)
+- **Žádná integrace sociálních sítí** - Lyricall není přimo propojený s žádnou 
+sociální sítí. Sorry Zuckerbergu, ale budeš si muset najít jiný způsob jak špehovat 
+naše uživatele.
+- **SEO friendly** - Celá stránka je navržen tak aby striktně dodržovala formát vhodný 
+pro SEO.
+- **Minimalistický design** - Celkový desing stránky je navržený, tak aby nerušil 
+vizuálním smogem od svého obsahu.
+- **Open Source** - Zdrojový kód celého projektu je OpenSource. Můžete ho najít na 
+[Githubu](https://github.com/yagarea/lyricall)
 
-#### Technological background
-This project is build using [Jekyll](https://jekyllrb.com/) from Minimalist 
-[template](https://github.com/Trybnetic/minimalist/).
+#### Technologické pozadí projektu
+
+Použité technologie:
+- Jekyll
+- Ruby
+- KaTeX
+
+Použité templaty:
+- Minimalist [template](https://github.com/Trybnetic/minimalist/)
+
+Grafika:
+- Favicon was designed by Freepik.
  
