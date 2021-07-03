@@ -1,11 +1,9 @@
 ---
-layout: default
+layout: document
 title: About
 permalink: /about/
 tab: about
 ---
-
-### Lyricall the movemnt
 
 ### Lyricall the platform
 Lyricall is minimalistic, multilingual and open source platform for free minded poetry 
