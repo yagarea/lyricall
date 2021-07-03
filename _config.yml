@@ -1,5 +1,6 @@
 title: Lyricall
 owner: "Jan Černý"
+ownersite: "https://blackblog.cz/"
 email:
 description: "A minimalistic platform for poetry"
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -22,7 +23,7 @@ exclude:
   - Gemfile.lock
   - vendor/bundle
   - README.md
-excerpt_separator: <!--more-->
 
+excerpt_separator: <!--more-->
 
 exclude: ["_site","scripts", "_meta"]
