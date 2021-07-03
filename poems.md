@@ -9,6 +9,7 @@ tab: listing
 {%- assign authors = authors_raw | split: "^" | uniq -%}
 
 <div id="post">
+<div class="frame">
 <div class="poem-list">
 {% for author in authors %}
 	<h2 id="{{ author | replace: " ", "-" }}">{{ author }}</h2>
@@ -18,7 +19,7 @@ tab: listing
 			{% if post.listed %}
 			<ul class="hfill">
     			<li><a href="{{ post.url | relative_url }}"><b>{{ post.title }}</b></a></li>
-				<li>[{{ post.lang | upcase }}] <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time></li>
+				<li>[{{ post.lang | upcase }}] <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date  | date: "%d. %m. %Y" }}</time></li>
 			</ul>
 			{% endif %}
 		{% endfor %}
