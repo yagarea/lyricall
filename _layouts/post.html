@@ -32,6 +32,9 @@
 					{% include disqus-comments.html %}
 				{% endif %}
 			</div>
+			{% if page.discussion != null and page.discussion != "" %}
+                     {% include discussion.html %}
+        	{% endif %}
 		</div>
 		{% include footer.html %}
 	</div>
