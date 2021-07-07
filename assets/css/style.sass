@@ -56,6 +56,12 @@ a
   margin-bottom: 20px
   padding-bottom: 20px
 
+code
+  background-color: var(--code-background-color)
+  padding: 5px
+  border-radius: 3px
+  color: var(--code-plain-text-color)
+
 #footer
   text-align: center
   margin: auto
@@ -143,10 +149,33 @@ hr
 
 #post
   line-height: 150%
+  position: relative
 
   i
     font-size: 0.9em
     color: grey
+
+.language-toggle
+  position: absolute
+  top: 0px
+  right: 0px
+  clear: both
+  display: flex
+  justify-content: center
+  line-height: 70%
+
+.language-toggle-item
+  float:right
+  padding: 5px
+  border: 2px solid var(--text-color)
+
+
+.language-toggle-selected-item
+  float:right
+  color: var(--post-frame-color)
+  background-color: var(--text-color) 
+  padding: 5px
+
 
 .discussion
   color: var(--discussion-text-color)
@@ -189,7 +218,7 @@ hr
   h3
     font-size: 2em
 
-@media screen and (max-width: 400px)
+@media screen and (max-width: 500px)
   #main
     width: auto
     margin: 0 auto
