@@ -1,9 +1,11 @@
 ---
 layout: document
 title: About
-permalink: /about/
+permalink: /en/about/
 tab: about
 ---
+
+{% include language-toggle.html lang="en" cz_link="/cz/about/" %}
 
 ### Lyricall the platform
 Lyricall is minimalistic, multilingual and open source platform for free minded poetry 
@@ -33,7 +35,7 @@ typographic quality.
 - **100% static** - The whole site is completely static and does not use any backend 
 at all.
 - **RSS support** - Lyricall has automatically generated feed. Feel free to add into 
-your RSS readers: [lyricall.cz/feed.xml](/feed.xml).
+your RSS readers: [`lyricall.cz/feed.xml`](/feed.xml)
 - **No social media integration** - This site is not connected with any social media. 
 Sorry Zuckeberg but you will have to find another way how to spy on our users.
 - **SEO friendly** - Lyricall is designed for maximal search engine optimalization.
@@ -53,4 +55,6 @@ Used technologies:
 - [HTML](https://en.wikipedia.org/wiki/HTML)
 - [CSS](https://en.wikipedia.org/wiki/CSS)
 
-Inspired by [Minimalist](https://github.com/Trybnetic/minimalist/) template and favicon was designed by Freepik. 
+Inspired by [Minimalist](https://github.com/Trybnetic/minimalist/) template and 
+favicon was designed by Freepik.
+
