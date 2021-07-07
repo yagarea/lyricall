@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Poems
-permalink: /poems/
-tab: listing
+permalink: /content/
+tab: content
 ---
 
 {%- capture authors_raw -%}{% for post in site.posts %}{{- post.author -}}{% if forloop.last == false %}^{% endif %}{% endfor %}{% endcapture %}
