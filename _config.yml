@@ -3,27 +3,35 @@ owner: "Jan Černý"
 ownersite: "https://blackblog.cz/"
 email:
 description: "A minimalistic platform for poetry"
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://lyricall.cz" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: ""                 # the subpath of your site, e.g. /blog
+url: "https://lyricall.cz"  # the base hostname & protocol for your site, e.g. http://example.com
 language: en
+
 # Build settings
-#
 markdown: kramdown
 theme: minima
 
 kramdown:
     math_engine: katex
 
-permalink: /:year/:month/:day/:title/
+collections:
+  posts:
+    output: true
+    custom_permalink_placeholders: ["author"]
+    permalink: /:author/:title/
+
+#permalink: /:year/:month/:day/:title/
 
 plugins:
   - jekyll-feed
+
 exclude:
   - Gemfile
   - Gemfile.lock
   - vendor/bundle
   - README.md
+  - _site
+  - scripts
+  - _meta
 
 excerpt_separator: <!--more-->
-
-exclude: ["_site","scripts", "_meta"]
