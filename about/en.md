@@ -1,11 +1,11 @@
 ---
 layout: document
 title: About
-permalink: /en/about/
+permalink: /about/en/
 tab: about
 ---
 
-{% include language-toggle.html lang="en" cz_link="/cz/about/" %}
+{% include language-toggle.html lang="en" cz_link="/about/cz/" %}
 
 ### Lyricall the platform
 Lyricall is minimalistic, multilingual and open source platform for free minded poetry 

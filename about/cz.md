@@ -1,11 +1,11 @@
 ---
 layout: document
 title: About
-permalink: /cz/about/
+permalink: /about/cz/
 tab: about
 ---
 
-{% include language-toggle.html lang="cz" en_link="/en/about/" %}
+{% include language-toggle.html lang="cz" en_link="/about/en/" %}
 
 ### Lyricall jako hnutí
 
