@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Poems
+title: Content
 permalink: /content/
 tab: content
 ---
