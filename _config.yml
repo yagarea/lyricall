@@ -20,10 +20,12 @@ collections:
     custom_permalink_placeholders: ["author"]
     permalink: /:author/:title/
 
-#permalink: /:year/:month/:day/:title/
+paginate: 50
+paginate_path: "/#:num/"
 
 plugins:
   - jekyll-feed
+  - jekyll-paginate
 
 exclude:
   - Gemfile
