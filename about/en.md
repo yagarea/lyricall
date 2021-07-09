@@ -7,18 +7,18 @@ tab: about
 
 {% include language-toggle.html lang="en" cz_link="/about/cz/" %}
 
-### Lyricall the platform
+## Lyricall the platform
 Lyricall is minimalistic, multilingual and open source platform for free minded poetry 
 publishing. It is maintained by [Jan Černý](https://blackblog.cz/). If you want to you 
 can send feed back in for of [github issue](https://github.com/yagarea/lyricall/issues) 
 or make pull request.
 
-#### Technological principles:
+### Technological principles:
 - **No JavaScript** - This whole site does not contain any javascript. Feel free to 
 turn it off.
 - **No cookies** - The whole platform does not use any cookies. That mean we do not 
 have to annoy you with banners and using this site is very safe.
-- **No external sources** - Everything on this site is load from it's own server.
+- **No external sources** - Everything on this site is loaded from it's own server.
 - **Respect for users privacy** - This site does not collect any information about 
 it's visitors. You can browse it in complete anonymity. We only collect very basic 
 traffic information using ethical and open source service 
@@ -45,7 +45,7 @@ users with visual smog.
 [Github](https://github.com/yagarea/lyricall).
 
 
-#### Technological background
+### Technological background
 
 Used technologies:
 - [Jekyll](https://jekyllrb.com/)
