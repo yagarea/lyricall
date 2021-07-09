@@ -11,7 +11,7 @@ tab: home
 			<a href="{{site.url}}{{site.baseurl}}{{post.url}}">
 				<h2>{{post.title}}</h2>
 			</a>
-			<a href="{{site.url}}{{site.baseurl}}/poems/#{{ post.author | replace: " ", "-" }}">
+			<a href="{{site.url}}{{site.baseurl}}/content/#{{ post.author | replace: " ", "-" }}">
 				<h3>{{post.author}}</h3>
 			</a>
 			<i>posted on {{ post.date | date: "%-d %b %Y" }}</i>
@@ -32,20 +32,17 @@ tab: home
 {% endfor %}
 </div>
 
-<div class="pagination">
-  {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path }}" class="previous">
-      Previous
-    </a>
-  {% else %}
-    <span class="previous">Previous</span>
-  {% endif %}
-  <span class="page_number ">
-    Page: {{ paginator.page }} of {{ paginator.total_pages }}
-  </span>
-  {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
-  {% else %}
-    <span class="next ">Next</span>
-  {% endif %}
-</div>
+{% if paginator.total_pages > 1 %}
+	<div class="pagination">
+  		<span class="page_number ">
+			Page: <i>{{ paginator.page }}</i> of <i>{{ paginator.total_pages }}</i>
+  		</span>
+		<br/>
+		{% if paginator.previous_page %}
+    		<a href="{{ paginator.previous_page_path }}" class="previous"><b>Previous</b></a>
+  		{% endif %}
+  		{% if paginator.next_page %}
+    		<a href="{{ paginator.next_page_path }}" class="next"><b>Next</b></a>
+  		{% endif %}
+	</div>
+{% endif %}
