@@ -1,32 +1,75 @@
 ---
-layout: default
+layout: document
 title: Impressum
-permalink: /impressum/
+permalink: /impressum/en/
 ---
 
-## The standard Lorem Ipsum passage, used since the 1500s
+{% include language-toggle.html lang="en" cz_link="/impressum/cz/" %}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
-mollit anim id est laborum.
+## Non-commercial usage
+All authors who published on lyricall platform gives their permission for uncomeretial 
+usage of their work in these terms:
 
+- They will be mention of the author 
+- Their work will not be edited
+- A link to the original publication on [lyricall.cz](lyricall.cz) will be provided.
 
-## Bonorum et Malorum", written by Cicero in 45 BC
+## Commercial use
+If you plan to publish a Lyricall work on a profit - generating platform or printing 
+in the sold printed matter, contact us at the email address: [`press @ lyricall.cz`](mailto: press@lyricall.cz).
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
-laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi 
-architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas 
-sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione 
-voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit 
-amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut 
-labore et dolore magnam aliquam quaerat voluptatem. 
+## Quote templates
+Here you will find basic templates for quoting poetry.
 
-Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis 
-suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel 
-eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae 
-consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
-1914 translation by H. Rackham
+### Markdown
+```markdown
+# Title of the work 
+**Author**
 
+Lorem ipsum dolor sit amet,\\
+consectetur adipiscing elit,\\
+sed do eiusmod tempor incididunt\\
+ut labore et dolore magna aliqua.\\
+
+Ut enim ad minim veniam,\\
+quis nostrud exercitation\\
+ullamco laboris nisi ut\\
+aliquip ex ea commodo consequat.\\
+
+Duis aute irure dolor in\\
+reprehenderit in\\
+voluptate velit esse cillum\\
+dolore eu fugiat nulla pariatur.\\
+
+[source](lyricall.cz/autor/nazev-dila)
+```
+
+### HTML
+```html
+<div class="lyricall-poem">
+    <h1>Title of the work</h1>
+    <b>Author<b>
+    <p>
+        Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt
+        ut labore et dolore magna aliqua.
+    </p>
+    <br/>
+    <p>
+        Ut enim ad minim veniam,
+        quis nostrud exercitation
+        ullamco laboris nisi ut
+        aliquip ex ea commodo consequat.
+    </p>
+    <br/>
+    <p>
+        Duis aute irure dolor in
+        reprehenderit in
+        voluptate velit esse cillum
+        dolore eu fugiat nulla pariatur.
+    </p>
+    <br/>
+    <a href="lyricall.cz/autor/nazev-dila">Source<a/>
+</div>
+```

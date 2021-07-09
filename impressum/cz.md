@@ -1,22 +1,25 @@
 ---
-layout: default
+layout: document
 title: Impressum
 permalink: /impressum/cz/
 ---
 
+{% include language-toggle.html lang="cz" en_link="/impressum/en/" %}
+
 ## Nekomerční použití
-Všichni autoři, kteří publikovali na platformě lyricall dávají své svolení k použití
-jejich práce za následujících podmínek:
+Všichni autoři, kteří publikovali na platformě Lyricall, dávají své svolení k nekomerčnímu 
+použití jejich práce za následujících podmínek:
+
 - Budou uvedeni jako autoři
 - Jejich práce nebude nijak editována
-- Bude uveden odkaz na původní publikaci na lyricall
+- Bude uveden odkaz na původní publikaci na [lyricall.cz](lyricall.cz)
 
 ## Komerční použití
-Pokud máte v plánu publikovat tvorbu z lyricallu na platformě generující zisk, nebo
+Pokud máte v plánu publikovat tvorbu z Lyricallu na platformě generující zisk nebo
 otištění v prodávané tiskovině, kontaktujte nás na emailové adrese: [`press@lyricall.cz`](mailto:press@lyricall.cz).
 
 ## Šablony k citacím
-Zde naleznete základní šablony pro citování 
+Zde naleznete základní šablony pro citování poezie.
 
 ### Markdown
 ```markdown
@@ -37,6 +40,8 @@ Duis aute irure dolor in\\
 reprehenderit in\\
 voluptate velit esse cillum\\
 dolore eu fugiat nulla pariatur.\\
+
+[source](lyricall.cz/autor/nazev-dila)
 ```
 
 ### HTML
@@ -64,6 +69,8 @@ dolore eu fugiat nulla pariatur.\\
 		voluptate velit esse cillum
 		dolore eu fugiat nulla pariatur.
 	</p>
+	<br/>
+	<a href="lyricall.cz/autor/nazev-dila">Source<a/>
 </div>
 ```
 
