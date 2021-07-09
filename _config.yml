@@ -20,8 +20,8 @@ collections:
     custom_permalink_placeholders: ["author"]
     permalink: /:author/:title/
 
-paginate: 50
-paginate_path: "/#:num/"
+paginate: 30
+paginate_path: "/:num/"
 
 plugins:
   - jekyll-feed
