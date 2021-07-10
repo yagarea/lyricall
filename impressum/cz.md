@@ -7,8 +7,8 @@ permalink: /impressum/cz/
 {% include language-toggle.html lang="cz" en_link="/impressum/en/" %}
 
 ## Nekomerční použití
-Všichni autoři, kteří publikovali na platformě Lyricall, dávají své svolení k nekomerčnímu 
-použití jejich práce za následujících podmínek:
+Všichni autoři, kteří publikovali na platformě Lyricall, dávají své svolení k 
+nekomerčnímu použití jejich práce za následujících podmínek:
 
 - Budou uvedeni jako autoři
 - Jejich práce nebude nijak editována
@@ -16,7 +16,8 @@ použití jejich práce za následujících podmínek:
 
 ## Komerční použití
 Pokud máte v plánu publikovat tvorbu z Lyricallu na platformě generující zisk nebo
-otištění v prodávané tiskovině, kontaktujte nás na emailové adrese: [`press@lyricall.cz`](mailto:press@lyricall.cz).
+otištění v prodávané tiskovině, kontaktujte nás na emailové adrese: 
+[`press@lyricall.cz`](mailto:press@lyricall.cz).
 
 ## Šablony k citacím
 Zde naleznete základní šablony pro citování poezie.

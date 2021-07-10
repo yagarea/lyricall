@@ -7,7 +7,7 @@ permalink: /impressum/en/
 {% include language-toggle.html lang="en" cz_link="/impressum/cz/" %}
 
 ## Non-commercial usage
-All authors who published on lyricall platform gives their permission for uncomeretial 
+All authors who published on Lyricall platform gives their permission for non-commercial 
 usage of their work in these terms:
 
 - They will be mention of the author 
@@ -15,8 +15,9 @@ usage of their work in these terms:
 - A link to the original publication on [lyricall.cz](lyricall.cz) will be provided.
 
 ## Commercial use
-If you plan to publish a Lyricall work on a profit - generating platform or printing 
-in the sold printed matter, contact us at the email address: [`press @ lyricall.cz`](mailto: press@lyricall.cz).
+If you plan to publish a Lyricall work on a profit generating platform or printing 
+in the press, contact us at the email address: 
+[`press@lyricall.cz`](mailto: press@lyricall.cz).
 
 ## Quote templates
 Here you will find basic templates for quoting poetry.
