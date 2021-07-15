@@ -5,7 +5,7 @@ permalink: /content/
 tab: content
 ---
 
-{%- capture authors_raw -%}{% for post in site.posts %}{{- post.author -}}{% if forloop.last == false %}^{% endif %}{% endfor %}{% endcapture %}
+{%- capture authors_raw -%}{% for post in site.posts %}{{- post.author -}}{% if forloop.last == false %}^{% endif %}{% endfor %}{%- endcapture -%}
 {%- assign authors = authors_raw | split: "^" | uniq -%}
 
 <div class="poem-list">
@@ -21,8 +21,10 @@ tab: content
 			</ul>
 			{% endif %}
 		{% endfor %}
-		<hr/>
 	</blockquote>
+	{% if forloop.last == false %}
+		<hr/>
+	{% endif %}
 {% endfor %}
 </div>
 
