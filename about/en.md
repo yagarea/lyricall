@@ -27,7 +27,7 @@ traffic information using ethical and open source service
 standard web browser including terminal ones. For browsing Lyricall we highly 
 recommend [w3m](http://w3m.sourceforge.net/) CLI browser.
 - **No paid content and advertisements** - By declining any form of advertisement or 
-paid content we can provide maximal objectivity, external influence and stay 
+paid content we can provide maximal objectivity without external influence and stay 
 independent.
 - **Full markdown and $$\LaTeX$$ support** - Lyricall has complete LaTeX support 
 including macros. You can freely combine it with markdown and Lyricall provide best 
