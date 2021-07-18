@@ -1,17 +1,19 @@
-<div class="language-toggle">
-	{% if include.lang == "en" %}
-		<div class="language-toggle-selected-item">
-			<b>EN</b>	
-		</div>
-		<div class="language-toggle-item" style="border-radius: 0px 5px 0px 0px">
-			<a href="{{ include.cz_link }}">CZ</a>
-		</div>
-	{% else %}
-		<div class="language-toggle-item">
-			<a href="{{ include.en_link }}">EN</a>	
-		</div>
-		<div class="language-toggle-selected-item" style="border-radius: 0px 5px 0px 0px">
-			<b>CZ</b>
-		</div>
-	{% endif %}
+<div class="hide-in-print">
+	<div class="language-toggle">
+		{% if include.lang == "en" %}
+			<div class="language-toggle-selected-item">
+				<b>EN</b>	
+			</div>
+			<div class="language-toggle-item" style="border-radius: 0px 5px 0px 0px">
+				<a href="{{ include.cz_link }}">CZ</a>
+			</div>
+		{% else %}
+			<div class="language-toggle-item">
+				<a href="{{ include.en_link }}">EN</a>	
+			</div>
+			<div class="language-toggle-selected-item" style="border-radius: 0px 5px 0px 0px">
+				<b>CZ</b>
+			</div>
+		{% endif %}
+	</div>
 </div>
