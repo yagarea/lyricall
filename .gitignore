@@ -6,11 +6,11 @@ _site
 
 
 # Private project files
-_posts/*
-!_posts/1845-02-25-raven.md		#Testing file
+_posts/
 _drafts/
 scripts/
 makefile
+stats.md
 
 # Other
 \.DS_Store
@@ -27,4 +27,3 @@ images/.comments
 
 # Python export files
 __pycache__/
-
