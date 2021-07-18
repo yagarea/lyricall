@@ -15,7 +15,6 @@ tab: home
 				<h3>{{post.author}}</h3>
 			</a>
 			<i>posted on {{ post.date | date: "%-d %b %Y" }}</i>
-			<p>
 				{% if post.excerpt %}
 					<blockquote>
 						{{ post.excerpt }}
@@ -26,7 +25,6 @@ tab: home
 						{{ post.content }}
 					</blockquote>
 				{% endif %}
-			</p>
 		</div>
 	{% endif %}
 {% endfor %}
