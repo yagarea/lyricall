@@ -1,8 +1,10 @@
 ---
 layout: document
 title: Donate
-permalink: /donate/
+permalink: /donate/en/
 ---
+
+{% include language-toggle.html lang="en" cz_link="/donate/cz/" %}
 
 All servers, development and content creation is financed by volunteers.
 If you want to share or some love of just support project Lyricall in platonic way
