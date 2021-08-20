@@ -10,7 +10,7 @@ permalink: /impressum/en/
 All authors who published on Lyricall platform gives their permission for non-commercial 
 usage of their work in these terms:
 
-- They will be mention of the author 
+- They will be mentioned as the author 
 - Their work will not be edited
 - A link to the original publication on [lyricall.cz](lyricall.cz) will be provided.
 
@@ -74,3 +74,4 @@ dolore eu fugiat nulla pariatur.\\
     <a href="lyricall.cz/autor/nazev-dila">Source<a/>
 </div>
 ```
+
