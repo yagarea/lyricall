@@ -4,6 +4,8 @@
 @import "assets/css/color-scheme.scss"
 @import "assets/css/highlight.sass"
 
+/*Fonts-------------------------------------------------------------------------------*/
+
 @font-face
   font-family: CutiveMono
   src: url("{{site.url}}{{site.baseurl}}/assets/fonts/CutiveMono-Regular.ttf") format("truetype")
@@ -11,6 +13,8 @@
 @font-face
   font-family: BetterGrade
   src: url("{{site.url}}{{site.baseurl}}/assets/fonts/BetterGrade.ttf") format("truetype")
+
+/*Elements----------------------------------------------------------------------------*/
 
 body
   margin-top: 0px
@@ -28,6 +32,44 @@ a
 
   &:hover
     text-decoration: underline
+
+code
+  background-color: var(--code-background-color)
+  padding: 5px
+  border-radius: 3px
+  color: var(--code-plain-text-color)
+  overflow-x: scroll
+
+  a
+    margin: 0 10px 0
+
+blockquote
+  background: var(--quote-color)
+  border-left: 3px solid var(--text-color)
+  padding: 1px 1.5em
+  opacity: .9
+
+blockquote p
+  line-height: 130%
+  
+blockquote, figure
+  margin: 1em 0
+
+  a
+    text-decoration: none
+    margin-top: 30px
+    margin-bottom: 30px
+    color: var(--logo-color)
+
+  img
+    max-width: 50%
+
+hr
+  height: 0.3px
+  color: var(--separator-color)
+  background-color: var(--separator-color)
+
+/*Classes-----------------------------------------------------------------------------*/
 
 .main
   width: 65%
@@ -58,20 +100,10 @@ a
 .error-message
   text-align: center
 
-code
-  background-color: var(--code-background-color)
-  padding: 5px
-  border-radius: 3px
-  color: var(--code-plain-text-color)
-  overflow-x: scroll
-
 .pagination
   width: 30%
   margin: auto
   text-align: center
-
-  a
-    margin: 0 10px 0
 
 .footer
   text-align: center
@@ -104,27 +136,16 @@ code
   font-size: 800%
   margin: 20px auto 20px auto
   text-decoration: none
-
+  
   a
     text-decoration: none
-    margin-top: 30px
-    margin-bottom: 30px
-    color: var(--logo-color)
-
-  img
-    max-width: 50%
-
-hr
-  height: 0.3px
-  color: var(--separator-color)
-  background-color: var(--separator-color)
 
 .content-left a
   color: var(--link-color)
 
   &:link, &:visited
     text-decoration: underline
-    color: var(--link-visited)
+    color: var(--link-visited-color)
 
   &:hover
     text-decoration: none
@@ -211,6 +232,8 @@ hr
     display: block
     padding: 5px
 
+/*Media-------------------------------------------------------------------------------*/
+
 @media screen and (max-width: 850px)
   .main
     width: auto
@@ -242,9 +265,6 @@ hr
   .logo, .nav, .content-left, .footer
     display: block
     width: 100%
-
-  .logo img
-    max-width: 80%
 
   .nav
     font-size: 1.1em
