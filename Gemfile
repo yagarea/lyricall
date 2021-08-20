@@ -22,6 +22,7 @@ gem "html-proofer"
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.6"
   gem "jekyll-paginate"
+  gem "jekyll-tidy"
 end
 
 gem "kramdown-math-katex"
