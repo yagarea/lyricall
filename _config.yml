@@ -19,13 +19,25 @@ collections:
     output: true
     custom_permalink_placeholders: ["author"]
     permalink: /:author/:title/
+  articles:
+    output: true
+    custom_permalink_placeholders: ["author", "layout"]
+    permalink: /:author/:layout/:title/
 
-paginate: 30
-paginate_path: "/:num/"
+excerpt_separator: <!--more-->
 
 plugins:
   - jekyll-feed
   - jekyll-paginate
+  - jekyll-tidy
+
+paginate: 30
+paginate_path: "/:num/"
+
+jekyll_tidy:
+  exclude: ["_includes/*"]
+  ignore_env: "testing"
+  compress_html: false
 
 exclude:
   - Gemfile
@@ -36,4 +48,3 @@ exclude:
   - scripts
   - _meta
 
-excerpt_separator: <!--more-->
