@@ -47,4 +47,5 @@ exclude:
   - _site
   - scripts
   - _meta
+  - makefile
 
