@@ -69,6 +69,24 @@ hr
   color: var(--separator-color)
   background-color: var(--separator-color)
 
+table
+  width: 70%
+  border-collapse: collapse
+  margin: 15px auto
+
+th, td
+  padding: .5em 1em
+  line-height: 105%
+
+th
+  font-size: 125%
+
+tr
+  border: 1px solid var(--separator-color)
+
+tr:nth-child(odd) td //tr:hover
+  background: reduce(8)
+
 /*Classes-----------------------------------------------------------------------------*/
 
 .main
@@ -124,6 +142,10 @@ hr
 .poem-list
   margin: auto
   max-width: 700px
+  padding: 15px
+
+  h2
+    margin: 20px 0
 
 .note
   line-height: 100%
@@ -158,28 +180,6 @@ hr
   margin: auto
   max-width: 800px
   margin-bottom: 10px
-
-.post-short
-  line-height: 130%
-  
-  a
-    &:link, &:visited
-      text-decoration: none
-      color: var(--link-visited-color)
-
-    &:hover
-      text-decoration: underline
-
-  h3
-    margin-bottom: 0px
-
-.post h2
-  margin-bottom: 0px
-
-.post-short i
-  font-size: 0.8em
-
-.post
   line-height: 150%
   position: relative
   padding-top: 12px
@@ -192,6 +192,34 @@ hr
     margin: 0 auto
     display: block
     float: none
+  
+  h1
+    margin-bottom: 5px
+
+  h2, h3,
+    margin: 10px 5px
+
+
+.post-short
+  line-height: 130%
+  padding: 20px
+  
+  a
+    &:link, &:visited
+      text-decoration: none
+      color: var(--link-visited-color)
+
+    &:hover
+      text-decoration: underline
+
+  i
+    font-size: 0.8em
+
+.indent
+  margin-left: 1em
+
+.post h2
+  margin-bottom: 0px
 
 .language-toggle
   position: absolute
@@ -231,6 +259,7 @@ hr
     width: 100%
     display: block
     padding: 5px
+
 
 /*Media-------------------------------------------------------------------------------*/
 
