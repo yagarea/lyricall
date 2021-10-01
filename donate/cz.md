@@ -7,7 +7,7 @@ permalink: /donate/cz/
 {% include language-toggle.html lang="cz" en_link="/donate/en/" %}
 
 Provoz serveru a vývoj je financován dobrovolníky. Pokud se chcete podělit o trochu
-lásky nebo chcete projekt Lyricall podpořit jen platonickým úmyslem, můžete využít
+lásky nebo chcete projekt Lyricall podpořit jen s platonickým úmyslem, můžete využít
 následujících možností jak darovat:
 
 ## Monero
