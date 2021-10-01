@@ -1,7 +1,6 @@
 title: Lyricall
 owner: "Jan Černý"
 ownersite: "https://blackblog.cz/"
-email:
 description: "A minimalistic platform for poetry"
 baseurl: ""                 # the subpath of your site, e.g. /blog
 url: "https://lyricall.cz"  # the base hostname & protocol for your site, e.g. http://example.com
@@ -23,6 +22,17 @@ collections:
     output: true
     custom_permalink_placeholders: ["author", "layout"]
     permalink: /:author/:layout/:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      listed: true
+      discussion: null
+      comments: false
+      note: null
 
 excerpt_separator: <!--more-->
 
@@ -47,4 +57,5 @@ exclude:
   - _site
   - scripts
   - _meta
+  - makefile
 

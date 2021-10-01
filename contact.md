@@ -4,4 +4,7 @@ title: Contact
 permalink: /contact/
 ---
 
-Here should be some nice table with contacts or something.
+| Person			| Contact													|
+|:-----------------:|:---------------------------------------------------------:|
+| Developer 		| [j.cerny.zdar@gmail.com](mailto:j.cerny.zdar@gmail.com)   |
+

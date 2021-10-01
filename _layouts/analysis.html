@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+<div class="post">
+<h2>{{page.title}} analysis by {{page.author}}</h2>
+<i>posted on {{ page.date | date: "%-d %b %Y" }}</i>
+	<ul>
+		<li><b>Author of writing:</b> {{ page.author-of-writing }}</li>
+		<li><b>Author of analysis:</b> {{ page.author }}</li>
+		<li><b>Date of publication:</b> {{ page.date-of-publication }}</li>
+		<li><b>Label:</b> {{ page.label }}</li>
+	</ul>
+	{{ content }}
+</div>
+

@@ -7,27 +7,68 @@ tab: about
 
 {% include language-toggle.html lang="cz" en_link="/about/en/" %}
 
+<h2 class="no_toc">Obsah</h2>
+
+{:toc}
+- .
+
+---
+
 ## Lyricall jako hnutí
 
 ### 1. Reakce na standardizovaní sterility umění
-Tento bod je první, protože je hlavním důvodem
+Tento bod je první, protože je hlavním důvodem, proč projekt Lyricall vznikl.
 
-Dnešní tvorba a umění celkově je odličtěné, sterilní, choulostivě korektní a jednorozměrné.
+Dnešní tvorba a umění celkově je odlidštěné, sterilní, choulostivě korektní a jednorozměrné.
 Umění je repetetivní, neoriginální a nevariabilní. Zmizela potřeba experimentovat.
+Umělci a společnosti, které je zaštiťují optimalizují na populismus.
+Tento jev je na svobodném trhu přirozený a technicky za to není špatně. Autoři jen
+svojí nabídku přizpůsobují poptávce. Zodpovědnost za tento stav podle nás nesou
+konzumenti.
 
-Toto lze metaforicky přiblížit porovnáním voskového a pravého ovoce.
+Náš pohled lze metaforicky vysvětlit na srovnání voskového a pravého jablka:  
+
+> Představte si před sebou dva košíky jablek. Jeden obsahuje jablka vosková a druhý 
+> opravdová jablka. I přestože vosková jablka budou krásná na pohled. 
+> Nemají žádnou nutriční hodnotu a vlastně vypadají všechna stejně. Nemají chuť, nemají
+> vůni. Jsou umělým produktem pro povrchní estetické uspokojení.
+>
+> Jablka opravdová jsou místy odřená, obouchaná, možná i popraskaná, nemají hezkou barvu
+> nebo nemají symetrický tvar. Ale jsou opravdovým a upřímným produktem něčeho živého.
+> Mají nutriční hodnotu. Mají chuť, kterou možná neocení každý, ale alespoň mají chuť 
+> na kterou se dá reagovat. Na kterou lze mít názor. Každé z jablek je unikátní a né 
+> produktem podle "osvědčené šablony".
 
 ### 2. Decentralizace
-Tvorba je centralizovaná a monopolní. 
+Tvorba umění je dnes centralizovaná a monopolní. Malá skupina firem a tedy i lidí mají
+moc rozhodovat o úspěchu autorů, nastavování limitů korektnosti a někdy až řízení
+cenzury. Jako autoři tohoto projektu se potom ptáme, kdo jsou, že jsou hodni rozhodovat 
+o kulturním rozvoji společnosti a co je pro něj dobré.
+
+Svobodný projev je jedna z nejcennějších věcí co člověk může mít a jak víme z historie
+(bohužel ve spoustě zemích i dnes) není samozřejmostí.
+Protože umění je jednou z nejdůležitějších forem svobodného projevu. Jeho cenzurou nebo
+moderováním obsahu je porušováno nejzákladnější lidské právo a to právo svobodného 
+projevu. Decentralizace toto elementární právo pomáhá ochránit.
+
+Projekt lyricall by měl být jedním z těch co inicializují decentralizaci a inspiruje
+další k nezávislé tvorbě. 
 
 ### 3. Osvobození jazyka a projevu
-Jazyk slouží člověku nikoliv naopak
-- Uvědomění si hodnoty a svobodného slova
-- Neuznávání libovolných autorit na konvence a určování co je v poezii správně nebo 
-špatně.
+Jazyk slouží člověku nikoliv naopak. Jazyk je nástrojem pro lidský projev a ten kdo ho
+používá drží jeho otěže. Lingvistická pravidla mají člověku pomoci pochopit fungování
+jazyka a být jeho vodítkem, nikoliv nástrojem pro byrokratizaci a zrigidnění jazyka.
+Jazyk má být živým a neustále se vyvíjejícím živlem.
+
+Ani lyrika nemá žádnou superiorní formu. Není správný způsob jak psát poezii a to i 
+přesto, že v minulosti vzniklo mnoho manifestů a dokumentů, které se pokoušely o svázání
+forem jejího projevu. Je v pořádku vyjádřit svůj postoj, ale není v pořádku vymáhat jeho 
+následování. Pokud se někdo rozhodne následovat nějaký konkrétní směr, mělo by to vždy
+být dobrovolným rozhodnutím jedince, nikoliv presumpcí autoritou.
 
 ### 4. Úcta ke všeobecnému vzdělání
-- ? Cílová skupina jsou lidi v přírodních vědách
+
+
 
 ---
 

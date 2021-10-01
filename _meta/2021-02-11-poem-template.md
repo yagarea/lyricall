@@ -1,10 +1,13 @@
 ---
-layout: post 
+layout: post
 title:	"Poem template"
-author: "Jan Černý"
-lang: "CZ"
+author: "John Doe"
+lang: EN
+permalink: null
 listed: true
+discussion: null
 comments: false
+note: "This is test post for lyricall."
 ---
 
 <!--more-->
