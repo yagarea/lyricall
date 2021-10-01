@@ -23,6 +23,17 @@ collections:
     custom_permalink_placeholders: ["author", "layout"]
     permalink: /:author/:layout/:title/
 
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      listed: true
+      discussion: null
+      comments: false
+      note: null
+
 excerpt_separator: <!--more-->
 
 plugins:
