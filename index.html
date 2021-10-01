@@ -9,22 +9,22 @@ tab: home
 	{% if post.listed %}
 		<div class="post-short">
 			<a href="{{site.url}}{{site.baseurl}}{{post.url}}">
-				<h2>{{post.title}}</h2>
+				<h2>{{post.title | markdownify | liquify | remove: "<p>" | remove: "</p>"}}</h2>
 			</a>
 			<a href="{{site.url}}{{site.baseurl}}/content/#{{ post.author | replace: " ", "-" }}">
 				<h3>{{post.author}}</h3>
 			</a>
 			<i>posted on {{ post.date | date: "%-d %b %Y" }}</i>
-				{% if post.excerpt %}
-					<blockquote>
-						{{ post.excerpt }}
-					</blockquote>
-					<a href="{{site.url}}{{site.baseurl}}{{post.url}}"><i>Read more...</i></a>
-				{% else %}
-					<blockquote>
-						{{ post.content }}
-					</blockquote>
-				{% endif %}
+			{% if post.excerpt %}
+				<blockquote>
+					{{ post.excerpt }}
+				</blockquote>
+				<a href="{{site.url}}{{site.baseurl}}{{post.url}}"><i>Read more...</i></a>
+			{% else %}
+				<blockquote>
+					{{ post.content }}
+				</blockquote>
+			{% endif %}
 		</div>
 	{% endif %}
 {% endfor %}
@@ -44,3 +44,4 @@ tab: home
   		{% endif %}
 	</div>
 {% endif %}
+
