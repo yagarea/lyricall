@@ -31,3 +31,48 @@ tab: content
 	</div>
 </div>
 
+
+<div class="post">
+	<div class="poem-list">
+		<h2>Statistics</h2>
+
+		{% assign totalWords = 0 %}
+		{% assign dateOb = '' %}
+
+		{% for post in site.posts %}
+			{% assign postWords = post.content | number_of_words %}
+			{% assign totalWords = totalWords | plus:  postWords %}
+			{% assign pd = post.date | date: "%Y-%m-%d" %}
+			{% unless forloop.first %}
+				{% assign dateOb = dateOb | append: "," %}
+			{% endunless %}
+			{% assign dateOb = dateOb | append: pd %}
+		{% endfor %}
+
+		{% assign avgWords = totalWords | divided_by: site.posts.size %}
+		
+		{% assign hidenPosts = 0 %}
+		{% for post in site.posts %}
+			{% if post.listed == false %}
+				{% assign hidenPosts = hidenPosts | plus: 1 %}
+			{% endif %}
+		{% endfor %}
+
+		<ul>
+			<li>Published posts: {{ site.posts.size | minus: hidenPosts }}</li>
+			<li>Hiden posts: {{ hidenPosts }}</li>
+			<!--<li>Total tags: {{ site.tags.size }}</li>-->
+			<li>Total words: {{ totalWords }}</li>
+			<li>Average words per post: {{ avgWords }}</li>
+		</ul>
+		<!--
+		postsPerTag:[
+			{% for tag in site.tags %}
+				{% assign tagName = tag[0] %}
+				{% unless forloop.first %},{% endunless %}
+				{ "name": "{{tagName}}", "size":{{site.tags[tagName].size}} }
+			{% endfor %}
+		],
+		-->
+	</div>
+</div>
