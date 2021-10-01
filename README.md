@@ -1,4 +1,6 @@
-# Lyricall
+
+<h1 style="font-family: BetterGrade, courier";>Lyricall</h1>
+
 Lyricall is minimalistic, multilingual and open source platform for free minded poetry
 publishing. It is maintained by [Jan Černý](https://blackblog.cz/). If you want to you
 can send feed back in for of [github issue](https://github.com/yagarea/lyricall/issues)
@@ -6,7 +8,7 @@ or make pull request.
 
 ---
 
-## Technological principles:
+### Technological principles:
 - **No JavaScript** - This whole site does not contain any javascript. Feel free to
 turn it off.
 - **No cookies** - The whole platform does not use any cookies. That mean we do not
@@ -22,7 +24,7 @@ recommend [w3m](http://w3m.sourceforge.net/) CLI browser.
 - **No paid content and advertisements** - By declining any form of advertisement or
 paid content we can provide maximal objectivity without external influence and stay
 independent.
-- **Full markdown and LaTeX support** - Lyricall has complete LaTeX support
+- **Full markdown and $$\LaTeX$$ support** - Lyricall has complete LaTeX support
 including macros. You can freely combine it with markdown and Lyricall provide best
 typographic quality.
 - **100% static** - The whole site is completely static and does not use any backend
@@ -50,3 +52,4 @@ Used technologies:
 
 Inspired by [Minimalist](https://github.com/Trybnetic/minimalist/) template and
 favicon was designed by Freepik.
+
