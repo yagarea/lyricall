@@ -1,5 +1,4 @@
-
-<h1 style="font-family: 'courier';">Lyricall</h1>
+# Lyricall
 
 Lyricall is minimalistic, multilingual and open source platform for free minded poetry
 publishing. It is maintained by [Jan Černý](https://blackblog.cz/). If you want to you
