@@ -1,7 +1,6 @@
 title: Lyricall
 owner: "Jan Černý"
 ownersite: "https://blackblog.cz/"
-email:
 description: "A minimalistic platform for poetry"
 baseurl: ""                 # the subpath of your site, e.g. /blog
 url: "https://lyricall.cz"  # the base hostname & protocol for your site, e.g. http://example.com
