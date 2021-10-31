@@ -99,7 +99,7 @@ maker. Autoři můžou markdown a LaTeX libovolně prolínat a lyricall jim zaru
 typografickou úpravu.
 - **100% statický** - Celá stránka je kompletně statická a nevyužívá žádný backend.
 - **Podpora RSS** - Lyricall má automaticky generovaný RSS feed. Můžete si ho přidat 
-do svých čteček: [`lyricall.cz/feed.xml`](/feed.xml)
+do svých čteček: [`lyricall.cz/feed.xml`](https://lyricall.cz/feed.xml)
 - **Žádná integrace sociálních sítí** - Lyricall není přimo propojený s žádnou 
 sociální sítí. Sorry Zuckerbergu, ale budeš si muset najít jiný způsob jak špehovat 
 naše uživatele.
