@@ -7,6 +7,13 @@ tab: about
 
 {% include language-toggle.html lang="en" cz_link="/about/cz/" %}
 
+<h2 class="no_toc">Content</h2>
+
+{:toc}
+- .
+ 
+---
+
 ## Lyricall the platform
 Lyricall is minimalistic, multilingual and open source platform for free minded poetry 
 publishing. It is maintained by [Jan Černý](https://blackblog.cz/). If you want to you 
