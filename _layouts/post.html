@@ -8,13 +8,41 @@ layout: default
 		<h3>{{ page.author }}</h3>
 	</a>
 	<i>posted on {{ page.date | date: "%-d %b %Y" }}</i>
-	<blockquote>
-		{{ content }}
-	</blockquote>
-	{% if page.note != null and page.note != "" %}
+	<div class="poem">
+		<blockquote>
+			{% capture raw %}
+				{% assign verses = content 
+				| strip 
+				| replace: "<p>", "" 
+				| replace: "<!--more-->", "<br />"
+				| new_line_to_br 
+				| split: "</p>"
+				%}
+				{% for v in verses %}
+					{% assign lines = v 
+					| strip 
+					| new_line_to_br 
+					| strip_newlines
+					| split: "<br />"
+					%}
+					{% for l in lines %}
+						{% if l %}
+							<p>{{ l }}</p>
+						{% endif %}
+					{% endfor %}
+					{% if forloop.last == false %}
+						<br/>
+					{% endif %} 
+				{% endfor %}
+			{% endcapture %}
+			{{ raw | replace: "<p></p>", "" }}
+		</blockquote>
+	</div>
+	{% if page.note %}
 		{% include note.html %}
 	{% endif %}
 </div>
 {% if page.discussion != null and page.discussion != "" %}
 	{% include discussion.html %}
 {% endif %}
+
