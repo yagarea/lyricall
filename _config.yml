@@ -20,8 +20,8 @@ collections:
     permalink: /:author/:title/
   articles:
     output: true
-    custom_permalink_placeholders: ["author", "layout"]
-    permalink: /:author/:layout/:title/
+    custom_permalink_placeholders: ["author", "type"]
+    permalink: /:author/:type/:title/
 
 defaults:
   - scope:
@@ -46,7 +46,7 @@ paginate_path: "/:num/"
 
 jekyll_tidy:
   exclude: ["_includes/*"]
-  ignore_env: "testing"
+  ignore_env: "development"
   compress_html: false
 
 exclude:
