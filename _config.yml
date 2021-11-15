@@ -8,7 +8,6 @@ language: en
 
 # Build settings
 markdown: kramdown
-theme: minima
 
 kramdown:
     math_engine: katex
