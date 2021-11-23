@@ -9,12 +9,23 @@
 @font-face
   font-family: CutiveMono
   src: url("{{site.url}}{{site.baseurl}}/assets/fonts/CutiveMono-Regular.ttf") format("truetype")
+  font-style: normal
+  font-display: swap
+  text-rendering: optimizeLegibility
 
 @font-face
   font-family: BetterGrade
   src: url("{{site.url}}{{site.baseurl}}/assets/fonts/BetterGrade.ttf") format("truetype")
+  font-style: normal
+  font-display: swap
+  text-rendering: optimizeLegibility
 
 /*Elements----------------------------------------------------------------------------*/
+
+html, body
+  min-height: 100%
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
 
 body
   margin-top: 0px
