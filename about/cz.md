@@ -7,7 +7,8 @@ tab: about
 
 {% include language-toggle.html lang="cz" en_link="/about/en/" %}
 
-<h2 class="no_toc">Obsah</h2>
+## Obsah
+{:.no_toc}
 
 {:toc}
 - .
