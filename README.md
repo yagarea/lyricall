@@ -29,7 +29,7 @@ typographic quality.
 - **100% static** - The whole site is completely static and does not use any backend
 at all.
 - **RSS support** - Lyricall has automatically generated feed. Feel free to add into
-your RSS readers: [`lyricall.cz/feed.xml`](lyricall.cz/feed.xml)
+your RSS readers: [`lyricall.cz/feed.xml`](https://lyricall.cz/feed.xml)
 - **No social media integration** - This site is not connected with any social media.
 Sorry Zuckeberg but you will have to find another way how to spy on our users.
 - **SEO friendly** - Lyricall is designed for maximal search engine optimalization.
