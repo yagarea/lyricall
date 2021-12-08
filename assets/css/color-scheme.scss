@@ -4,37 +4,36 @@
 
 @mixin dark-theme {
 	--body-color: 			#313131;
-	--text-color: 			#FFFFFF;
-	--title-color: 			#FFFFFF;
-	--subtitle-color: 		#808080;
+	--code-background-color:#000000;
+	--code-plain-text-color:#FFFFFF;
+	--discussion-text-color:#FFA500;
 	--logo-color: 			#FFFFFF;
+	--post-frame-color: 	#242526;
+	--subtitle-color: 		#EAEAEA;
+	--text-color: 			#FFFFFF;
+	--text-highlight-color: #D3D3D3;
+	--title-color: 			#FFFFFF;
  	--link-color: 			#FFFFFF;
  	--link-visited-color: 	#FFFFFF;
  	--quote-color: 			#343434;
-	--code-background-color:#000000;
-	--code-plain-text-color:#FFFFFF;
-	--text-highlight-color: #D3D3D3;
  	--separator-color: 		#525252;
-	--post-frame-color: 	#242526;
-	--discussion-text-color:#FFA500;
-
 }
 
 @mixin light-theme {
 	--body-color: 			#EBEBEB;
-	--text-color: 			#000000;
-	--title-color: 			#000000;
-	--subtitle-color: 		#808080;
+	--code-background-color:#575757;
+	--code-plain-text-color:#FFFFFF;
+	--discussion-text-color:#B70000;
 	--logo-color: 			#000000;
+	--post-frame-color:		#D3D3D3;
+	--subtitle-color: 		#3E3E3E;
+	--text-color: 			#000000;
+	--text-highlight-color: #D3D3D3;
+	--title-color: 			#000000;
  	--link-color: 			#000000;
  	--link-visited-color: 	#000000;
  	--quote-color: 			#DCDCDC;
-	--code-background-color:#575757;
-	--code-plain-text-color:#FFFFFF;
-	--text-highlight-color: #D3D3D3;
  	--separator-color: 		#706A60;
-	--post-frame-color:		#D3D3D3;
-	--discussion-text-color:#B70000;
 }
 
 :root {
