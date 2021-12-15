@@ -1,0 +1,20 @@
+<div class="post">
+	<h3>Read by {{ include.read-by }}</h3>
+	<blockquote>
+		<audio controls>
+			{% for af in include.files %}
+				{%capture suffix%}
+				{{af | split:"." | last) == "ogg" }}
+				{% endcapture %}
+				{% if suffix == "ogg"%}
+					<source src="/audio/{{ af }}" type="audio/ogg">
+				{% else %}
+					<source src="/audio/{{ af }}" type="audio/mpeg">
+				{% endif %}
+			{% endfor %}
+			Your browser does not support the audio element.
+		</audio> 
+	</blockquote>
+	{% include license-tag.html %}
+</div>
+
