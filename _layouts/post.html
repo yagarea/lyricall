@@ -43,6 +43,11 @@ layout: default
 	{% endif %}
 	{% include license-tag.html %}
 </div>
+
+{% if page.audio %}
+	{% include audio-player.html read-by=page.audio.read-by files=page.audio.files %}
+{% endif %}
+
 {% if page.discussion != null and page.discussion != "" %}
 	{% include discussion.html %}
 {% endif %}
