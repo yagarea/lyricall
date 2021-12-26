@@ -23,7 +23,7 @@ recommend [w3m](http://w3m.sourceforge.net/) CLI browser.
 - **No paid content and advertisements** - By declining any form of advertisement or
 paid content we can provide maximal objectivity without external influence and stay
 independent.
-- **Full markdown and $$\LaTeX$$ support** - Lyricall has complete LaTeX support
+- **Full markdown and LaTeX support** - Lyricall has complete LaTeX support
 including macros. You can freely combine it with markdown and Lyricall provide best
 typographic quality.
 - **100% static** - The whole site is completely static and does not use any backend
