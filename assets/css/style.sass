@@ -38,10 +38,14 @@ body
   background-color: var(--body-color)
   color: var(--text-color)
 
+main
+  width: 65%
+  margin: 0 auto
+
 a
   &:link, &:visited
     text-decoration: none
-    color:  var(--link-visited-color)
+    color: var(--link-visited-color)
 
   &:hover
     text-decoration: underline
@@ -64,7 +68,7 @@ blockquote
 
 blockquote p
   line-height: 130%
-  
+
 blockquote, figure
   margin: 1em 0
 
@@ -105,13 +109,7 @@ audio
   width: 100%
   margin: 1em auto
 
-/*Classes-----------------------------------------------------------------------------*/
-
-.main
-  width: 65%
-  margin: 0 auto
-
-.nav
+nav
   text-align: center
   margin: auto
   margin-top: 0px
@@ -119,6 +117,16 @@ audio
   margin-bottom: 5px
   padding-bottom: 5px
   border-bottom: 3px solid var(--separator-color)
+
+footer
+  text-align: center
+  margin: auto
+  font-size: 0.8em
+  margin-bottom: 10px
+  padding-bottom: 10px
+  border-top: 3px solid var(--separator-color)
+
+/*Classes-----------------------------------------------------------------------------*/
 
 .content-left
   text-align: left
@@ -143,14 +151,6 @@ audio
 
 .license-tag
   text-align: right 
-
-.footer
-  text-align: center
-  margin: auto
-  font-size: 0.8em
-  margin-bottom: 10px
-  padding-bottom: 10px
-  border-top: 3px solid var(--separator-color)
 
 .hfill
   display: flex
