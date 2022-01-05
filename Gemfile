@@ -10,6 +10,7 @@ ruby RUBY_VERSION
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
 gem "jekyll", "4.2.0"
+gem "ffi"
 
 # This is the gem used to test the output html
 gem "html-proofer"
