@@ -3,7 +3,7 @@ _site
 .sass-cache
 .jekyll-metadata
 .jekyll-cache
-
+.jektex-cache
 
 # Private project files
 _posts/
