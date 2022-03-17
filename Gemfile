@@ -24,7 +24,7 @@ group :jekyll_plugins do
   gem "jekyll-feed"
   gem "jekyll-paginate"
   gem "jekyll-tidy"
-  gem "jektex", "~> 0.0.5"
+  gem "jektex"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
