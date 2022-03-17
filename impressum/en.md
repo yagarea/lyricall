@@ -16,8 +16,8 @@ usage of their work in these terms:
 
 ## Commercial use
 If you plan to publish a Lyricall work on a profit generating platform or printing 
-in the press, contact us at the email address: 
-[`press@lyricall.cz`](mailto: press@lyricall.cz).
+in the press, contact us at the email address:
+[`press@lyricall.cz`](mailto:press@lyricall.cz).
 
 ## Quote templates
 Here you will find basic templates for quoting poetry.

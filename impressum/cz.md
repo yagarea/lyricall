@@ -16,7 +16,7 @@ nekomerčnímu použití jejich práce za následujících podmínek:
 
 ## Komerční použití
 Pokud máte v plánu publikovat tvorbu z Lyricallu na platformě generující zisk nebo
-otištění v prodávané tiskovině, kontaktujte nás na emailové adrese: 
+otištění v prodávané tiskovině, kontaktujte nás na emailové adrese:
 [`press@lyricall.cz`](mailto:press@lyricall.cz).
 
 ## Šablony k citacím
