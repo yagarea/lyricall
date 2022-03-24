@@ -36,14 +36,14 @@ excerpt_separator: <!--more-->
 plugins:
   - jekyll-feed
   - jekyll-paginate
-  - jekyll-tidy
   - jektex
+    #- jekyll-tidy
 
 paginate: 30
 paginate_path: "/:num/"
 
 jekyll_tidy:
-  exclude: ["_drafts/*"]
+  exclude: ["_drafts/*", "**/*.js", "**/*.scss", "**/*.css", "!**/*.html"]
   ignore_env: "development"
   compress_html: false
 
