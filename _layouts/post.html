@@ -27,7 +27,7 @@ layout: default
 					%}
 					{% for l in lines %}
 						{% if l %}
-							<p>{{ l }}</p>
+							<div class="poem-line">{{ l }}</div>
 						{% endif %}
 					{% endfor %}
 					{% if forloop.last == false %}
