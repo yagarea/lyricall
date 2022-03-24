@@ -2,15 +2,13 @@ title: Lyricall
 owner: "Jan Černý"
 ownersite: "https://blackblog.cz/"
 description: "A minimalistic platform for poetry"
+keywords: "poetry, lyrics, lyricall, free speach, open source, foss, decentralize, journalism, publish, book, education"
 baseurl: ""                 # the subpath of your site, e.g. /blog
 url: "https://lyricall.cz"  # the base hostname & protocol for your site, e.g. http://example.com
 language: en
 
 # Build settings
 markdown: kramdown
-
-kramdown:
-    math_engine: katex
 
 collections:
   posts:
@@ -39,12 +37,13 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-tidy
+  - jektex
 
 paginate: 30
 paginate_path: "/:num/"
 
 jekyll_tidy:
-  exclude: ["_includes/*"]
+  exclude: ["_drafts/*"]
   ignore_env: "development"
   compress_html: false
 

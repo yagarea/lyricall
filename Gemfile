@@ -9,7 +9,7 @@ ruby RUBY_VERSION
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem "jekyll", "4.2.0"
+gem "jekyll", "4.2.1"
 gem "ffi"
 
 # This is the gem used to test the output html
@@ -24,9 +24,8 @@ group :jekyll_plugins do
   gem "jekyll-feed"
   gem "jekyll-paginate"
   gem "jekyll-tidy"
+  gem "jektex"
 end
-
-gem "kramdown-math-katex"
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
