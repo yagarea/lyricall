@@ -19,7 +19,7 @@ tab: content
 				{%- if post.listed -%}
 				<ul class="hfill">
 					<li><a href="{{ post.url | relative_url }}"><b>{{ post.title | markdownify | liquify | remove: "<p>" | remove: "</p>" }}</b></a></li>
-					<li>{%- if post.audio -%}[A]{%- endif -%}[{{- post.lang | upcase -}}] <time class="hide-on-mobile" atetime="{{- post.date | date_to_xmlschema -}}">{{- post.date  | date: "%d. %m. %Y" -}}</time></li>
+					<li>{%- if post.audio -%}[A]{%- endif -%}[{{- post.lang | upcase -}}] <time class="hide-on-mobile" datetime="{{- post.date | date_to_xmlschema -}}">{{- post.date  | date: "%d. %m. %Y" -}}</time></li>
 				</ul>
 				{% endif %}
 			{% endfor %}
