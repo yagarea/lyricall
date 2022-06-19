@@ -5,7 +5,7 @@ permalink: /content/
 tab: content
 ---
 
-{%- capture authors_raw -%}{% for post in site.posts %}{{- post.author -}}{% if forloop.last == false %}^{% endif %}{% endfor %}{%- endcapture -%}
+{%- capture authors_raw -%}{% for post in site.posts %}{% if post.listed != false %}{{- post.author -}}{% if forloop.last == false %}^{% endif %}{% endif %}{% endfor %}{%- endcapture -%}
 {%- assign authors = authors_raw | split: "^" | uniq | sort_natural -%}
 
 <h2 style="text-align: center;">{{page.title}}</h2>
