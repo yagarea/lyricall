@@ -44,7 +44,7 @@ users with visual smog.
 Used technologies:
 - [Jekyll](https://jekyllrb.com/)
 - [Ruby](https://www.ruby-lang.org/en/)
-- [KaTeX](https://katex.org/)
+- [JekTeX](https://rubygems.org/gems/jektex)
 - [Liquid](https://shopify.github.io/liquid/)
 - [HTML](https://en.wikipedia.org/wiki/HTML)
 - [CSS](https://en.wikipedia.org/wiki/CSS)
