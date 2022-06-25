@@ -23,7 +23,7 @@ gem "html-proofer"
 group :jekyll_plugins do
   gem "jekyll-feed"
   gem "jekyll-paginate"
-  gem "jekyll-tidy"
+#  gem "jekyll-tidy"
   gem "jektex"
 end
 
