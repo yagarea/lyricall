@@ -95,7 +95,7 @@ prohlížečích, včetně terminálových. Pro prohlížení lyricallu doporuč
 [w3m](http://w3m.sourceforge.net/).
 - **Žádný placený obsah ani reklamy** - Odmítnutím reklam ani placeného obsahu si 
 zajišťujeme objektivitu, snižujeme externí vlivy a zůstáváme samostatní.
-- **Podpora Markdownu a $$\LaTeX u$$** - Lyricall má kompletní podporu LaTeXu včetně 
+- **Podpora Markdownu a \(\LaTeX u\)** - Lyricall má kompletní podporu LaTeXu včetně 
 maker. Autoři můžou markdown a LaTeX libovolně prolínat a lyricall jim zaručí dobrou 
 typografickou úpravu.
 - **100% statický** - Celá stránka je kompletně statická a nevyužívá žádný backend.
@@ -116,11 +116,9 @@ uživatele vizuálním smogem od svého obsahu.
 Použité technologie:
 - [Jekyll](https://jekyllrb.com/)
 - [Ruby](https://www.ruby-lang.org/en/)
-- [KaTeX](https://katex.org/)
+- [JekTeX](https://rubygems.org/gems/jektex)
 - [Liquid](https://shopify.github.io/liquid/)
 - [HTML](https://en.wikipedia.org/wiki/HTML)
 - [CSS](https://en.wikipedia.org/wiki/CSS)
 
 Inspirováno šablonou [Minimalist](https://github.com/Trybnetic/minimalist/) a Favicon 
-was designed by Freepik.
-
