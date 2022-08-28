@@ -39,7 +39,7 @@ plugins:
   - jektex
     #- jekyll-tidy
 
-paginate: 30
+paginate: 15
 paginate_path: "/:num/"
 
 jekyll_tidy:
