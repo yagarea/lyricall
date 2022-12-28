@@ -41,7 +41,9 @@ tab: content
 
 		{% for post in site.posts %}
 			{% assign postWords = post.content | number_of_words %}
-			{% assign totalWords = totalWords | plus:  postWords %}
+            {% if post.listed != false %}
+			    {% assign totalWords = totalWords | plus:  postWords %}
+            {% endif %}
 			{% assign pd = post.date | date: "%Y-%m-%d" %}
 			{% unless forloop.first %}
 				{% assign dateOb = dateOb | append: "," %}
@@ -49,7 +51,8 @@ tab: content
 			{% assign dateOb = dateOb | append: pd %}
 		{% endfor %}
 
-		{% assign avgWords = totalWords | divided_by: site.posts.size %}
+        {% assign publishedPosts = site.posts.size | minus: hidenPosts %}
+		{% assign avgWords = totalWords | divided_by: publishedPosts %}
 		
 		{% assign hidenPosts = 0 %}
 		{% for post in site.posts %}
@@ -59,11 +62,11 @@ tab: content
 		{% endfor %}
 
 		<ul>
-			<li>Published posts: {{ site.posts.size | minus: hidenPosts }}</li>
+			<li>Published posts: {{ publishedPosts }}</li>
 			<li>Hiden posts: {{ hidenPosts }}</li>
 			<!--<li>Total tags: {{ site.tags.size }}</li>-->
 			<li>Total words: {{ totalWords }}</li>
-			<li>Average words per post: {{ avgWords }}</li>
+			<li>Average words per poem: {{ avgWords }}</li>
 		</ul>
 		<!--
 		postsPerTag:[
