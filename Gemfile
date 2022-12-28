@@ -23,8 +23,7 @@ gem "html-proofer"
 group :jekyll_plugins do
   gem "jekyll-feed"
   gem "jekyll-paginate"
-#  gem "jekyll-tidy"
-  gem "jektex"
+  gem "jektex", "~> 0.1.0"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
