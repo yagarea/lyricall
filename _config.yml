@@ -37,15 +37,9 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
   - jektex
-    #- jekyll-tidy
 
 paginate: 15
 paginate_path: "/:num/"
-
-jekyll_tidy:
-  exclude: ["_drafts/*", "**/*.js", "**/*.scss", "**/*.css", "!**/*.html"]
-  ignore_env: "development"
-  compress_html: false
 
 exclude:
   - Gemfile
