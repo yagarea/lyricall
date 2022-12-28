@@ -1,0 +1,7 @@
+<div class="post">
+	<h3>Artwork by {{ include.author -}}</h3>
+	<blockquote>
+		<img src="/assets/images/{{- include.file -}}" alt="image made by {{- include.author -}}">
+	</blockquote>
+	{% include license-tag.html %}
+</div>
