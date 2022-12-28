@@ -10,45 +10,49 @@ layout: default
 	<i>posted on {{ page.date | date: "%-d %b %Y" }}</i>
 	<div class="poem">
 		<blockquote>
-			{% capture raw %}
-				{% assign verses = content 
-				| strip 
-				| replace: "<p>", "" 
+			{%- capture raw -%}
+				{%- assign verses = content
+				| strip
+				| replace: "<p>", ""
 				| replace: "<!--more-->", "<br />"
 				| new_line_to_br 
 				| split: "</p>"
-				%}
-				{% for v in verses %}
-					{% assign lines = v 
-					| strip 
-					| new_line_to_br 
+				-%}
+				{%- for v in verses -%}
+					{%- assign lines = v
+					| strip
+					| new_line_to_br
 					| strip_newlines
 					| split: "<br />"
-					%}
-					{% for l in lines %}
-						{% if l %}
+					-%}
+					{%- for l in lines -%}
+						{%- if l -%}
 							<div class="poem-line">{{ l }}</div>
-						{% endif %}
-					{% endfor %}
-					{% if forloop.last == false %}
+						{%- endif -%}
+					{%- endfor -%}
+					{%- if forloop.last == false -%}
 						<br/>
-					{% endif %} 
-				{% endfor %}
-			{% endcapture %}
+					{%- endif -%}
+				{%- endfor -%}
+			{%- endcapture -%}
 			{{ raw | replace: "<p></p>", "" }}
 		</blockquote>
 	</div>
-	{% if page.note %}
-		{% include note.html %}
-	{% endif %}
-	{% include license-tag.html %}
+	{%- if page.note -%}
+		{%- include note.html -%}
+	{%- endif -%}
+	{%- include license-tag.html -%}
 </div>
 
-{% if page.audio %}
-	{% include audio-player.html read-by=page.audio.read-by files=page.audio.files %}
-{% endif %}
+{%- if page.audio -%}
+	{%- include audio-player.html read-by=page.audio.read-by files=page.audio.files -%}
+{%- endif -%}
 
-{% if page.discussion != null and page.discussion != "" %}
-	{% include discussion.html %}
-{% endif %}
+{%- if page.image -%}
+	{%- include image.html file=page.image.file author=page.image.author -%}
+{%- endif -%}
+
+{%- if page.discussion != null and page.discussion != "" -%}
+	{%- include discussion.html -%}
+{%- endif -%}
 
