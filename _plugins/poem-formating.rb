@@ -7,14 +7,13 @@ module Jekyll
 
       output = ""
       for line in text.lines
-        if line =~ /\s*/
+        if line =~ /^\s*$/
           output += "\n<br>"
         else
-          output += %Q[\n<div class="poem-line"] + md_converter.convert(line) + "</div>"
+          output += %Q[\n<div class="poem-line">] + md_converter.convert(line) + %Q[</div>]
         end
-
-      return output
       end
+      return output
     end
   end
 end
