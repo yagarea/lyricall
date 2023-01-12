@@ -1,0 +1,48 @@
+{
+	"$schema": "https://json.schemastore.org/web-manifest-combined.json",
+	"name" : "Lyricall",
+	"short_name" : "Lyricall",
+	"description" : "Free minded platform for poetry publishing",
+	"display" : "standalone",
+	"orientation" : "portrait",
+	"theme_color" : "#000000",
+	"background_color" : "#EBEBEB",
+	"scope" : "/",
+	"start_url" : "https://lyricall.cz/",
+	"icons" : [
+		{
+			"src": "/assets/icons/32.jpg",
+			"sizes": "32x32",
+			"type": "image/jpg"
+		},
+		{
+			"src": "/assets/icons/64.jpg",
+			"sizes": "64x64",
+			"type": "image/jpg"
+		},{
+			"src": "/assets/icons/72.jpg",
+			"sizes": "72x72",
+			"type": "image/jpg"
+		},{
+			"src": "/assets/icon/96.jpg",
+			"sizes": "96x96",
+			"type": "image/jpg"
+		},
+		{
+			"src": "/assets/icon/128.jpg",
+			"sizes": "128x128",
+			"type": "image/jpg",
+			"purpose": "any maskable"
+		},
+		{
+			"src": "/assets/icon/256.jpg",
+			"sizes": "256x256",
+			"type": "image/jpg"
+		},
+		{
+			"src": "/assets/icon/512.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	]
+}
