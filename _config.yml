@@ -28,7 +28,6 @@ defaults:
       layout: "post"
       listed: true
       discussion: null
-      comments: false
       note: null
 
 excerpt_separator: <!--more-->
