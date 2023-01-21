@@ -111,7 +111,7 @@ DEPENDENCIES
   webrick (~> 1.7)
 
 RUBY VERSION
-   ruby 3.0.4p208
+   ruby 3.0.5p211
 
 BUNDLED WITH
    2.3.3
