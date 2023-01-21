@@ -29,3 +29,4 @@ images/.comments
 # Python export files
 __pycache__/
 audio
+pages/unlisted.md
