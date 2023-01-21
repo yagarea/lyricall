@@ -7,6 +7,13 @@ tab: about
 
 {% include language-toggle.html lang="cz" en_link="/about/en/" %}
 
+{:.banner}
+> [Kontakt](/contact/)  
+> [Impressum](/impressum/)  
+> [Atom feed](/feed.xml)  
+> [Darovat](/donate/)  
+
+
 ## Obsah
 {:.no_toc}
 

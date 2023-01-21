@@ -7,12 +7,21 @@ tab: about
 
 {% include language-toggle.html lang="en" cz_link="/about/cz/" %}
 
+{:.banner}
+> [Contact](/contact/)  
+> [Impressum](/impressum/)  
+> [Atom feed](/feed.xml)  
+> [Donate](/donate/)  
+
+
 ## Content
 {:.no_toc}
 
 {:toc}
 - .
- 
+
+<br>
+
 ---
 
 ## Lyricall the platform
@@ -21,7 +30,7 @@ publishing. It is maintained by [Jan Černý](https://blackblog.cz/). If you wan
 can send feed back in for of [github issue](https://github.com/yagarea/lyricall/issues) 
 or make pull request.
 
-### Technological principles:
+### Technological principles
 - **No JavaScript** - This whole site does not contain any javascript. Feel free to 
 turn it off.
 - **No cookies** - The whole platform does not use any cookies. That mean we do not 
