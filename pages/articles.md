@@ -3,6 +3,8 @@ layout: document
 title: Articles
 permalink: /articles/
 tab: content
+sitemap: false
+listed: false
 ---
 
 {%- capture authors_raw -%}{% for post in site.articles %}{{- post.author -}}{% if forloop.last == false %}^{% endif %}{% endfor %}{%- endcapture -%}
