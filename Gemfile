@@ -9,7 +9,7 @@ ruby RUBY_VERSION
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem "jekyll", "4.2.1"
+gem "jekyll", "4.3.2"
 gem "ffi"
 
 # This is the gem used to test the output html
@@ -21,7 +21,6 @@ gem "html-proofer"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-  gem "jekyll-feed"
   gem "jekyll-paginate"
   gem "jektex", "~> 0.1.0"
 end
