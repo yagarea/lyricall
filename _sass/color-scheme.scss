@@ -3,37 +3,37 @@
 // dark theme reference:  https://colorhunt.co/palette/525252414141313131ec625f
 
 @mixin dark-theme {
-	--body-color: 			#313131;
+	--body-color:			#313131;
 	--code-background-color:#000000;
 	--code-plain-text-color:#FFFFFF;
 	--discussion-text-color:#FFA500;
-	--logo-color: 			#FFFFFF;
-	--post-frame-color: 	#242526;
-	--subtitle-color: 		#EAEAEA;
-	--text-color: 			#FFFFFF;
+	--logo-color:			#FFFFFF;
+	--post-frame-color:		#242526;
+	--subtitle-color:		#EAEAEA;
+	--text-color:			#FFFFFF;
 	--text-highlight-color: #D3D3D3;
-	--title-color: 			#FFFFFF;
- 	--link-color: 			#FFFFFF;
- 	--link-visited-color: 	#FFFFFF;
- 	--quote-color: 			#313131;
- 	--separator-color: 		#525252;
+	--title-color:			#FFFFFF;
+	--link-color:			#FFFFFF;
+	--link-visited-color:	#FFFFFF;
+	--quote-color:			#313131;
+	--separator-color:		#525252;
 }
 
 @mixin light-theme {
-	--body-color: 			#EBEBEB;
+	--body-color:			#EBEBEB;
 	--code-background-color:#575757;
 	--code-plain-text-color:#FFFFFF;
 	--discussion-text-color:#B70000;
-	--logo-color: 			#000000;
+	--logo-color:			#000000;
 	--post-frame-color:		#D3D3D3;
-	--subtitle-color: 		#3E3E3E;
-	--text-color: 			#000000;
+	--subtitle-color:		#3E3E3E;
+	--text-color:			#000000;
 	--text-highlight-color: #D3D3D3;
-	--title-color: 			#000000;
- 	--link-color: 			#000000;
- 	--link-visited-color: 	#000000;
- 	--quote-color: 			#DCDCDC;
- 	--separator-color: 		#706A60;
+	--title-color:			#000000;
+	--link-color:			#000000;
+	--link-visited-color:	#000000;
+	--quote-color:			#DCDCDC;
+	--separator-color:		#706A60;
 }
 
 :root {
