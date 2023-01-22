@@ -9,9 +9,9 @@ tab: about
 
 {:.banner}
 > [Kontakt](/contact/)  
-> [Impressum](/impressum/)  
+> [Impressum](/impressum/en/)  
 > [Atom feed](/feed.xml)  
-> [Darovat](/donate/)  
+> [Darovat](/donate/en/)  
 
 
 ## Obsah
