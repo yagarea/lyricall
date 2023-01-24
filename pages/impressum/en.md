@@ -12,7 +12,7 @@ usage of their work in these terms:
 
 - They will be mentioned as the author 
 - Their work will not be edited
-- A link to the original publication on [lyricall.cz](lyricall.cz) will be provided.
+- A link to the original publication on [lyricall.cz](https://lyricall.cz/) will be provided.
 
 ## Commercial use
 If you plan to publish a Lyricall work on a profit generating platform or printing 

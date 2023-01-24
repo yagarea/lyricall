@@ -12,7 +12,7 @@ nekomerčnímu použití jejich práce za následujících podmínek:
 
 - Budou uvedeni jako autoři
 - Jejich práce nebude nijak editována
-- Bude uveden odkaz na původní publikaci na [lyricall.cz](lyricall.cz)
+- Bude uveden odkaz na původní publikaci na [lyricall.cz](https://lyricall.cz/)
 
 ## Komerční použití
 Pokud máte v plánu publikovat tvorbu z Lyricallu na platformě generující zisk nebo
