@@ -16,5 +16,5 @@ následujících možností jak darovat:
 8B9LjxjiGD4443z4ogmq9GhS7LSAUj9sY8LM1HS7UfVQTrsqswsP63nLNg7iVYomaiaNydCzCKczdEyEsL2sfp89RDFaCpn
 ```
 
-![Monero](/donate/monero-qr-code.png)
+![Monero](/assets/images/monero-qr-code.png)
 
