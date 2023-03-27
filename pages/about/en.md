@@ -12,6 +12,7 @@ tab: about
 > [Impressum](/impressum/en/)  
 > [Atom feed](/feed.xml)  
 > [Donate](/donate/en/)  
+> [Repository](https://github.com/yagarea/lyricall/)  
 
 
 ## Content
