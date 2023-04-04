@@ -48,4 +48,5 @@ exclude:
   - scripts
   - _meta
   - makefile
+  - LICENSE
 
