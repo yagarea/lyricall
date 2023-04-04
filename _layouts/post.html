@@ -10,7 +10,7 @@ layout: default
 	<i>posted on {{ page.date | date: "%-d %b %Y" }}</i>
 	<div class="poem">
 		<blockquote>
-			{%- capture raw -%}
+			{% capture raw -%}
 				{%- assign verses = content
 				| strip
 				| replace: "<p>", ""
@@ -27,20 +27,18 @@ layout: default
 					-%}
 					{%- for l in lines -%}
 						{%- if l -%}
-							<div class="poem-line">{{ l }}</div>
-						{%- endif -%}
+							<div class="poem-line">{{- l -}}</div>
+						{% endif -%}
 					{%- endfor -%}
 					{%- if forloop.last == false -%}
-						<br/>
-					{%- endif -%}
+						<br>
+					{% endif -%}
 				{%- endfor -%}
 			{%- endcapture -%}
 			{{ raw | replace: "<p></p>", "" }}
 		</blockquote>
 	</div>
-	{%- if page.note -%}
-		{%- include note.html -%}
-	{%- endif -%}
+	{% if page.note -%}{%- include note.html -%}{%- endif -%}
 	{%- include license-tag.html -%}
 </div>
 
