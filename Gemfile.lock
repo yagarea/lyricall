@@ -40,6 +40,8 @@ GEM
       typhoeus (~> 1.3)
       yell (~> 2.0)
       zeitwerk (~> 2.5)
+    htmlbeautifier (1.4.2)
+    htmlcompressor (0.4.0)
     htmlentities (4.3.4)
     http_parser.rb (0.8.0)
     i18n (1.12.0)
@@ -68,6 +70,10 @@ GEM
     jekyll-paginate (1.1.0)
     jekyll-sass-converter (3.0.0)
       sass-embedded (~> 1.54)
+    jekyll-tidy (0.2.2)
+      htmlbeautifier
+      htmlcompressor
+      jekyll
     jekyll-watch (2.2.1)
       listen (~> 3.0)
     kramdown (2.4.0)
@@ -129,6 +135,7 @@ DEPENDENCIES
   jektex (~> 0.1.0)
   jekyll (= 4.3.2)
   jekyll-paginate
+  jekyll-tidy
   tzinfo-data
   webrick (~> 1.7)
 
