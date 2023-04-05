@@ -35,6 +35,16 @@ excerpt_separator: <!--more-->
 plugins:
   - jekyll-paginate
   - jektex
+  - jekyll-tidy
+
+
+jekyll_tidy:
+  exclude:
+    - "**/*.scss"
+    - "**/*.sass"
+    - "**/*.js"
+    - "**/*.svg"
+    - "**/*.xml"
 
 paginate: 15
 paginate_path: "/:num/"
