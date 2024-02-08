@@ -7,8 +7,6 @@ baseurl: ""                 # the subpath of your site, e.g. /blog
 url: "https://lyricall.cz"  # the base hostname & protocol for your site, e.g. http://example.com
 language: en
 
-# Build settings
-markdown: kramdown
 
 collections:
   posts:
@@ -30,6 +28,9 @@ defaults:
       discussion: null
       note: null
 
+markdown: kramdown
+sass:
+  style: compressed
 excerpt_separator: <!--more-->
 
 plugins:
