@@ -30,3 +30,4 @@ images/.comments
 __pycache__/
 audio
 pages/unlisted.md
+.vendor

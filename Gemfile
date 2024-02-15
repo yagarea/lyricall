@@ -10,7 +10,7 @@ gem "html-proofer"
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   gem "jekyll-paginate"
-  gem "jektex", "~> 0.1.0"
+  gem "jektex", "~> 0.1.1"
   gem "jekyll-tidy"
 end
 
@@ -20,4 +20,5 @@ gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # PLugin dependencies
 gem "webrick", "~> 1.7"
 gem "activesupport"
+gem "json"
 
