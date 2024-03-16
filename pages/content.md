@@ -5,17 +5,15 @@ permalink: /content/
 tab: content
 ---
 
-{%- capture authors_raw -%}{% for post in site.posts %}{% if post.listed != false %}{{- post.author -}}{% if forloop.last == false %}^{% endif %}{% endif %}{% endfor %}{%- endcapture -%}
-{%- assign authors = authors_raw | split: "^" | uniq | sort_natural -%}
+{%- assign authors = site.posts | group_by:"author" | sort:"name" -%}
 
 <h2 style="text-align: center;">{{page.title}}</h2>
 <div class="post">
 	<div class="poem-list">
 	{% for author in authors %}
-		{% assign current_author = site.posts | where: "author", author %}
-		<h2 id="{{ author | replace: " ", "-" }}">{{ author }}</h2>
+		<h2 id="{{ author.name | replace: " ", "-" }}">{{ author.name }}</h2>
 		<div class="indent">
-			{%- for post in current_author -%}
+			{%- for post in author.items -%}
 				{%- if post.listed -%}
 				<ul class="hfill">
 					<li><a href="{{ post.url | relative_url }}"><b>{{ post.title | markdownify | liquify | remove: "<p>" | remove: "</p>" }}</b></a></li>
