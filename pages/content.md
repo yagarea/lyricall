@@ -26,8 +26,7 @@ tab: content
             {% for book in books -%}
                 <details>
                     <summary>
-                        <strong>{{- book.name -}}</strong>
-                        <span>Collection ({{- book.items | size -}})</span>
+                            <strong>{{- book.name -}}</strong> ({{- book.items | size -}})
                     </summary>
                     <div class="indent">
                     {%- for post in book.items -%}
