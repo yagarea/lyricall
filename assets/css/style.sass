@@ -132,6 +132,21 @@ footer
   padding-bottom: 10px
   border-top: 3px solid var(--separator-color)
 
+summary
+  cursor: pointer
+  display: flex
+  justify-content: space-between
+  padding-bottom: 0px
+  padding-left: 0px
+  margin: 0px
+
+  ::marker
+    content: "▶"
+
+details
+  ul
+    margin-left: 2em
+
 /*Classes-----------------------------------------------------------------------------*/
 
 .content-left
@@ -156,15 +171,16 @@ footer
   text-align: center
 
 .license-tag
-  text-align: right 
+  text-align: right
+
 
 .hfill
   display: flex
   justify-content: space-between
-  list-style-type: none
   padding-bottom: 0px
   padding-left: 0px
   margin: 0px
+  list-style-type: none
 
   li
     max-width: 25em
