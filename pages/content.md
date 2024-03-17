@@ -9,71 +9,90 @@ tab: content
 
 <h2 style="text-align: center;">{{page.title}}</h2>
 <div class="post">
-	<div class="poem-list">
-	{% for author in authors %}
-		<h2 id="{{ author.name | replace: " ", "-" }}">{{ author.name }}</h2>
-		<div class="indent">
-			{%- for post in author.items -%}
-				{%- if post.listed -%}
-				<ul class="hfill">
-					<li><a href="{{ post.url | relative_url }}"><b>{{ post.title | markdownify | liquify | remove: "<p>" | remove: "</p>" }}</b></a></li>
-					<li>{%- if post.audio -%}[A]{%- endif -%}[{{- post.lang | upcase -}}] <time class="hide-on-mobile" datetime="{{- post.date | date_to_xmlschema -}}">{{- post.date  | date: "%d. %m. %Y" -}}</time></li>
-				</ul>
-				{% endif %}
-			{% endfor %}
-		</div>
-		{% if forloop.last == false %}
-			<hr/>
-		{% endif %}
-	{% endfor %}
-	</div>
+    <div class="poem-list">
+    {% for author in authors %}
+        <h2 id="{{ author.name | replace: " ", "-" }}">{{ author.name }}</h2>
+        <div class="indent">
+            {%- assign posts_nb = author.items | group_by:"book" | where:"name","" -%}
+            {%- for post in posts_nb[0].items -%}
+                {%- if post.listed -%}
+                <ul class="hfill">
+                    <li><a href="{{ post.url | relative_url }}"><b>{{ post.title | markdownify | liquify | remove: "<p>" | remove: "</p>" }}</b></a></li>
+                    <li>{%- if post.audio -%}[A]{%- endif -%}[{{- post.lang | upcase -}}] <time class="hide-on-mobile" datetime="{{- post.date | date_to_xmlschema -}}">{{- post.date  | date: "%d. %m. %Y" -}}</time></li>
+                </ul>
+                {% endif %}
+            {% endfor %}
+            {%- assign books = author.items | group_by:"book" | where_exp:"item","item.name != ''" -%}
+            {% for book in books -%}
+                <details>
+                    <summary>
+                        <strong>{{- book.name -}}</strong>
+                        <span>Collection ({{- book.items | size -}})</span>
+                    </summary>
+                    <div class="indent">
+                    {%- for post in book.items -%}
+                        {%- if post.listed -%}
+                            <ul class="hfill">
+                                <li><a href="{{ post.url | relative_url }}"><b>{{ post.title | markdownify | liquify | remove: "<p>" | remove: "</p>" }}</b></a></li>
+                                <li>{%- if post.audio -%}[A]{%- endif -%}[{{- post.lang | upcase -}}] <time class="hide-on-mobile" datetime="{{- post.date | date_to_xmlschema -}}">{{- post.date  | date: "%d. %m. %Y" -}}</time></li>
+                            </ul>
+                        {%- endif -%}
+                    {%- endfor %}
+                    </div>
+                </details>
+            {%- endfor %}
+        </div>
+        {% if forloop.last == false %}
+            <hr/>
+        {% endif %}
+    {% endfor %}
+    </div>
 </div>
 
 
 <div class="post">
-	<div class="poem-list">
-		<h2>Statistics</h2>
+    <div class="poem-list">
+        <h2>Statistics</h2>
 
-		{% assign totalWords = 0 %}
-		{% assign dateOb = '' %}
+        {% assign totalWords = 0 %}
+        {% assign dateOb = '' %}
 
-		{% for post in site.posts %}
-			{% assign postWords = post.content | number_of_words %}
+        {% for post in site.posts %}
+            {% assign postWords = post.content | number_of_words %}
             {% if post.listed != false %}
-			    {% assign totalWords = totalWords | plus:  postWords %}
+                {% assign totalWords = totalWords | plus:  postWords %}
             {% endif %}
-			{% assign pd = post.date | date: "%Y-%m-%d" %}
-			{% unless forloop.first %}
-				{% assign dateOb = dateOb | append: "," %}
-			{% endunless %}
-			{% assign dateOb = dateOb | append: pd %}
-		{% endfor %}
+            {% assign pd = post.date | date: "%Y-%m-%d" %}
+            {% unless forloop.first %}
+                {% assign dateOb = dateOb | append: "," %}
+            {% endunless %}
+            {% assign dateOb = dateOb | append: pd %}
+        {% endfor %}
 
         {% assign publishedPosts = site.posts.size | minus: hidenPosts %}
-		{% assign avgWords = totalWords | divided_by: publishedPosts %}
-		
-		{% assign hidenPosts = 0 %}
-		{% for post in site.posts %}
-			{% if post.listed == false %}
-				{% assign hidenPosts = hidenPosts | plus: 1 %}
-			{% endif %}
-		{% endfor %}
+        {% assign avgWords = totalWords | divided_by: publishedPosts %}
+        {% assign hidenPosts = 0 %}
+        {% for post in site.posts %}
+            {% if post.listed == false %}
+                {% assign hidenPosts = hidenPosts | plus: 1 %}
+            {% endif %}
+        {% endfor %}
 
-		<ul>
-			<li>Published posts: {{ publishedPosts }}</li>
-			<li>Hiden posts: {{ hidenPosts }}</li>
-			<!--<li>Total tags: {{ site.tags.size }}</li>-->
-			<li>Total words: {{ totalWords }}</li>
-			<li>Average words per poem: {{ avgWords }}</li>
-		</ul>
-		<!--
-		postsPerTag:[
-			{% for tag in site.tags %}
-				{% assign tagName = tag[0] %}
-				{% unless forloop.first %},{% endunless %}
-				{ "name": "{{tagName}}", "size":{{site.tags[tagName].size}} }
-			{% endfor %}
-		],
-		-->
-	</div>
+        <ul>
+            <li>Published posts: {{ publishedPosts }}</li>
+            <li>Hiden posts: {{ hidenPosts }}</li>
+            <!--<li>Total tags: {{ site.tags.size }}</li>-->
+            <li>Total words: {{ totalWords }}</li>
+            <li>Average words per poem: {{ avgWords }}</li>
+        </ul>
+        <!--
+        postsPerTag:[
+            {% for tag in site.tags %}
+                {% assign tagName = tag[0] %}
+                {% unless forloop.first %},{% endunless %}
+                { "name": "{{tagName}}", "size":{{site.tags[tagName].size}} }
+            {% endfor %}
+        ],
+        -->
+    </div>
 </div>
