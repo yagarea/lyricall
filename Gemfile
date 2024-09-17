@@ -1,8 +1,7 @@
 source "https://rubygems.org"
 ruby RUBY_VERSION
 
-gem "jekyll", "4.3.3"
-gem "ffi"
+gem "jekyll", "4.3.4"
 
 # This is the gem used to test the output html
 gem "html-proofer"
@@ -21,4 +20,5 @@ gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "webrick", "~> 1.7"
 gem "activesupport"
 gem "json"
+gem "ffi"
 
