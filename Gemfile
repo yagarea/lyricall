@@ -17,7 +17,7 @@ end
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # PLugin dependencies
-gem "webrick", "~> 1.7"
+gem "webrick", "~> 1.8.1"
 gem "activesupport"
 gem "json"
 gem "ffi"
