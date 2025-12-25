@@ -29,11 +29,11 @@ tab: about
 Tento bod je první, protože je hlavním důvodem, proč projekt Lyricall vznikl.
 
 Dnešní tvorba a umění celkově je odlidštěné, sterilní, choulostivě korektní a jednorozměrné.
-Umění je repetetivní, neoriginální a nevariabilní. Zmizela potřeba experimentovat.
+Umění je repetitivní, neoriginální a nevariabilní. Zmizela potřeba doopravdy experimentovat.
 Umělci a společnosti, které je zaštiťují optimalizují na populismus.
-Tento jev je na svobodném trhu přirozený a technicky za to není špatně. Autoři jen
-svojí nabídku přizpůsobují poptávce. Zodpovědnost za tento stav podle nás nesou
-konzumenti.
+Tento jev je na svobodném trhu přirozený a technicky za to není špatně.
+Autoři jen svojí nabídku přizpůsobují poptávce.
+Zodpovědnost za tento stav podle nás nesou konzumenti.
 
 Náš pohled lze metaforicky vysvětlit na srovnání voskového a pravého jablka:  
 
@@ -42,16 +42,18 @@ Náš pohled lze metaforicky vysvětlit na srovnání voskového a pravého jabl
 > Nemají žádnou nutriční hodnotu a vlastně vypadají všechna stejně. Nemají chuť, nemají
 > vůni. Jsou umělým produktem pro povrchní estetické uspokojení.
 >
-> Jablka opravdová jsou místy odřená, obouchaná, možná i popraskaná, nemají hezkou barvu
+> Jablka opravdová jsou místy odřená, otlučená, možná i popraskaná, nemají hezkou barvu
 > nebo nemají symetrický tvar. Ale jsou opravdovým a upřímným produktem něčeho živého.
 > Mají nutriční hodnotu. Mají chuť, kterou možná neocení každý, ale alespoň mají chuť 
 > na kterou se dá reagovat. Na kterou lze mít názor. Každé z jablek je unikátní a né 
 > produktem podle "osvědčené šablony".
 
+Tento bod je ještě více relevantní v době AI.
+
 ### 2. Decentralizace
 Tvorba umění je dnes centralizovaná a monopolní. Malá skupina firem a tedy i lidí mají
 moc rozhodovat o úspěchu autorů, nastavování limitů korektnosti a někdy až řízení
-cenzury. Jako autoři tohoto projektu se potom ptáme, kdo jsou, že jsou hodni rozhodovat 
+cenzury. Jako autoři tohoto projektu se potom ptáme, kdo jsou, že jsou hodni rozhodovat
 o kulturním rozvoji společnosti a co je pro něj dobré.
 
 Svobodný projev je jedna z nejcennějších věcí co člověk může mít a jak víme z historie
@@ -61,7 +63,7 @@ moderováním obsahu je porušováno nejzákladnější lidské právo a to prá
 projevu. Decentralizace toto elementární právo pomáhá ochránit.
 
 Projekt lyricall by měl být jedním z těch co inicializují decentralizaci a inspiruje
-další k nezávislé tvorbě. 
+další k nezávislé tvorbě.
 
 ### 3. Osvobození jazyka a projevu
 Jazyk slouží člověku nikoliv naopak. Jazyk je nástrojem pro lidský projev a ten kdo ho
@@ -69,15 +71,11 @@ používá drží jeho otěže. Lingvistická pravidla mají člověku pomoci po
 jazyka a být jeho vodítkem, nikoliv nástrojem pro byrokratizaci a zrigidnění jazyka.
 Jazyk má být živým a neustále se vyvíjejícím živlem.
 
-Ani lyrika nemá žádnou superiorní formu. Není správný způsob jak psát poezii a to i 
+Ani lyrika nemá žádnou superiorní formu. Není správný způsob jak psát poezii a to i
 přesto, že v minulosti vzniklo mnoho manifestů a dokumentů, které se pokoušely o svázání
-forem jejího projevu. Je v pořádku vyjádřit svůj postoj, ale není v pořádku vymáhat jeho 
+forem jejího projevu. Je v pořádku vyjádřit svůj postoj, ale není v pořádku vymáhat jeho
 následování. Pokud se někdo rozhodne následovat nějaký konkrétní směr, mělo by to vždy
 být dobrovolným rozhodnutím jedince, nikoliv presumpcí autoritou.
-
-### 4. Úcta ke všeobecnému vzdělání
-
-
 
 ---
 
@@ -91,7 +89,7 @@ můžete na githubu napsat zpětnou vazbu ve formě
 - **Žádný javascript** - Tato stránka neobsahuje žádný javascript, můžete si ho klidně
 vypnout.
 - **Žádné cookies** - Celá platforma lyricall nevyužívá cookies. Nemusíme Vás tak 
-otravovat banery na jejich povolení a zvyšujeme tím bezpečnost.
+otravovat bannery na jejich povolení a zvyšujeme tím bezpečnost.
 - **Žádné externí zdroje** - Vše na této stránce se načítá pouze z jejich vlastních 
 serverů.
 - **Respekt k soukromí uživatelů** - Tato stránka nesbírá žádná data o svých 
@@ -129,4 +127,5 @@ Použité technologie:
 - [HTML](https://en.wikipedia.org/wiki/HTML)
 - [CSS](https://en.wikipedia.org/wiki/CSS)
 
-Inspirováno šablonou [Minimalist](https://github.com/Trybnetic/minimalist/) a Favicon 
+Inspirováno šablonou [Minimalist](https://github.com/Trybnetic/minimalist/) a Favicona
+je od Freepik.
