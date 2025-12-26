@@ -1,0 +1,62 @@
+---
+layout: default
+title: Obsah
+permalink: /content/cz/
+tab: content
+---
+
+<h2 style="text-align: center;">{{page.title}}</h2>
+<div class="post">
+	{% include language-toggle.html lang="cz" en_link="/content/" %}
+	{% include content-list.html %}
+</div>
+
+<div class="post">
+	<div class="poem-list">
+		<h2>Statistiky</h2>
+
+		{% assign totalWords = 0 %}
+		{% assign dateOb = '' %}
+
+		{% for post in site.posts %}
+			{% assign postWords = post.content | number_of_words %}
+			{% if post.listed != false %}
+				{% assign totalWords = totalWords | plus:  postWords %}
+			{% endif %}
+			{% assign pd = post.date | date: "%Y-%m-%d" %}
+			{% unless forloop.first %}
+				{% assign dateOb = dateOb | append: "," %}
+			{% endunless %}
+			{% assign dateOb = dateOb | append: pd %}
+		{% endfor %}
+
+		{% assign publishedPosts = site.posts.size | minus: hidenPosts %}
+		{% assign avgWords = totalWords | divided_by: publishedPosts %}
+		{% assign hidenPosts = 0 %}
+		{% for post in site.posts %}
+			{% if post.listed == false %}
+				{% assign hidenPosts = hidenPosts | plus: 1 %}
+			{% endif %}
+		{% endfor %}
+
+		{%- assign collection_count = site.posts | group_by:"book" | uniq | size | minus: 1 -%}
+
+		<ul>
+			<li>Publikované příspěvky: {{ publishedPosts }}</li>
+			<li>Skryté příspěvky: {{ hidenPosts }}</li>
+			<!--<li>Total tags: {{ site.tags.size }}</li>-->
+			<li>Celkem slov: {{ totalWords }}</li>
+			<li>Průměrný počet slov v díle: {{ avgWords }}</li>
+			<li>Publikovaných sbírek: {{ collection_count }}</li>
+		</ul>
+		<!--
+		postsPerTag:[
+			{% for tag in site.tags %}
+				{% assign tagName = tag[0] %}
+				{% unless forloop.first %},{% endunless %}
+				{ "name": "{{tagName}}", "size":{{site.tags[tagName].size}} }
+			{% endfor %}
+		],
+		-->
+	</div>
+</div>
