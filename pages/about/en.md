@@ -94,9 +94,7 @@ turn it off.
 have to annoy you with banners and using this site is very safe.
 - **No external sources** - Everything on this site is loaded from it's own server.
 - **Respect for users privacy** - This site does not collect any information about 
-it's visitors. You can browse it in complete anonymity. We only collect very basic 
-traffic information using ethical and open source service 
-[plausible](https://plausible.io/).
+it's visitors. You can browse it in complete anonymity.
 - **Wide range of compatibility including CLI browsers** - Lyricall works on every 
 standard web browser including terminal ones. For browsing Lyricall we highly 
 recommend [w3m](http://w3m.sourceforge.net/) CLI browser.
@@ -112,7 +110,7 @@ at all.
 your RSS readers: [`lyricall.cz/feed.xml`](https://lyricall.cz/feed.xml)
 - **No social media integration** - This site is not connected with any social media. 
 Sorry Zuckeberg but you will have to find another way how to spy on our users.
-- **SEO friendly** - Lyricall is designed for maximal search engine optimalization.
+- **SEO friendly** - Lyricall is designed for maximal search engine optimization.
 - **Minimalistic desing** - The whole design is is made in way it will not disturb 
 users with visual smog.
 - **Open Source** - Source code of this whole project is open source. You can find it 

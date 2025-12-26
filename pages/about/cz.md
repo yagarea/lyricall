@@ -93,9 +93,7 @@ otravovat bannery na jejich povolení a zvyšujeme tím bezpečnost.
 - **Žádné externí zdroje** - Vše na této stránce se načítá pouze z jejich vlastních 
 serverů.
 - **Respekt k soukromí uživatelů** - Tato stránka nesbírá žádná data o svých 
-návštěvnících. Můžete si ji prohlížet v kompletní anonymitě. Sbíráme pouze velmi 
-základní informace o navštěvovanosti, pomocí etické a open source služby 
-[plausible](https://plausible.io/).
+návštěvnících. Můžete si ji prohlížet v kompletní anonymitě.
 - **Široká kompatibilita včetně CLI** - Lyricall funguje na všech standardních 
 prohlížečích, včetně terminálových. Pro prohlížení lyricallu doporučujeme CLI prohlížeč 
 [w3m](http://w3m.sourceforge.net/).
