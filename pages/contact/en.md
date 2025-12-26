@@ -1,8 +1,10 @@
 ---
 layout: document
 title: Contact
-permalink: /contact/
+permalink: /contact/en/
 ---
+
+{% include language-toggle.html lang="en" cz_link="/contact/cz/" %}
 
 ## Authors
 We protect personal information of our authors. If you want to contact any of our
