@@ -18,7 +18,7 @@ GEM
     addressable (2.9.0)
       public_suffix (>= 2.0.2, < 8.0)
     afm (1.0.0)
-    async (2.39.0)
+    async (2.42.0)
       console (~> 1.29)
       fiber-annotation
       io-event (~> 1.11)
@@ -30,12 +30,12 @@ GEM
     colorator (1.1.0)
     concurrent-ruby (1.3.7)
     connection_pool (3.0.2)
-    console (1.36.0)
+    console (1.37.0)
       fiber-annotation
       fiber-local (~> 1.1)
       json
     csv (3.3.5)
-    digest (3.1.1)
+    digest (3.2.1)
     drb (2.2.3)
     em-websocket (0.5.3)
       eventmachine (>= 0.12.9)
@@ -94,12 +94,12 @@ GEM
     htmlcompressor (0.4.0)
     htmlentities (4.4.2)
     http_parser.rb (0.8.1)
-    i18n (1.15.1)
+    i18n (1.15.2)
       concurrent-ruby (~> 1.0)
-    io-event (1.16.2)
-    jektex (0.1.1)
-      digest (~> 3.1.1, >= 3.1.1)
-      execjs (~> 2.1, >= 2.9.1)
+    io-event (1.19.1)
+    jektex (0.2.0)
+      digest (>= 3.1.1)
+      execjs (~> 2.9, >= 2.9.1)
       htmlentities (~> 4.3, >= 4.3.4)
     jekyll (4.4.1)
       addressable (~> 2.4)
@@ -129,7 +129,7 @@ GEM
       jekyll
     jekyll-watch (2.2.1)
       listen (~> 3.0)
-    json (2.19.9)
+    json (2.20.0)
     kramdown (2.5.2)
       rexml (>= 3.4.4)
     kramdown-parser-gfm (1.1.0)
@@ -231,7 +231,7 @@ DEPENDENCIES
   csv
   ffi
   html-proofer
-  jektex (~> 0.1.1)
+  jektex (~> 0.2.0)
   jekyll (= 4.4.1)
   jekyll-paginate
   jekyll-tidy
@@ -243,4 +243,4 @@ RUBY VERSION
   ruby 3.4.8
 
 BUNDLED WITH
-  4.0.14
+  4.0.16

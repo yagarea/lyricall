@@ -9,7 +9,7 @@ gem "html-proofer"
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   gem "jekyll-paginate"
-  gem "jektex", "~> 0.1.1"
+  gem "jektex", "~> 0.2.0"
   gem "jekyll-tidy"
 end
 
